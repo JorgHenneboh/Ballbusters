@@ -13,6 +13,7 @@
 
  		<?php
  			the_post();
+      the_title('<h1>','</h1>');
  		?>
 
 

@@ -15,7 +15,7 @@
 
  		<?php
  			the_post();
-      the_title();
+      the_title('<h1>','</h1>');
  		?>
 
 
