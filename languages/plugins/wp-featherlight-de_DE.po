@@ -1,0 +1,37 @@
+# Translation of Plugins - WP Featherlight &#8211; A Simple jQuery Lightbox - Stable (latest release) in German
+# This file is distributed under the same license as the Plugins - WP Featherlight &#8211; A Simple jQuery Lightbox - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2022-02-19 19:04:10+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/3.0.0-alpha.2\n"
+"Language: de\n"
+"Project-Id-Version: Plugins - WP Featherlight &#8211; A Simple jQuery Lightbox - Stable (latest release)\n"
+
+#. Plugin URI of the plugin
+msgid "https://wpfeatherlight.cipherdevelopment.com"
+msgstr "https://wpfeatherlight.cipherdevelopment.com"
+
+#. Author URI of the plugin
+msgid "https://cipherdevelopment.com"
+msgstr "https://cipherdevelopment.com"
+
+#. Author of the plugin
+msgid "Cipher"
+msgstr "Cipher"
+
+#. Description of the plugin
+msgid "An ultra lightweight jQuery lightbox for WordPress images and galleries."
+msgstr "Eine sehr leichtgewichtige jQuery-Lightbox für WordPress-Bilder und -Galerien."
+
+#. Plugin Name of the plugin
+#: admin/class-meta.php:139
+msgid "WP Featherlight"
+msgstr "WP Featherlight"
+
+#: admin/views/meta-box.php:15
+msgid "Disable lightbox"
+msgstr "Lightbox deaktivieren"

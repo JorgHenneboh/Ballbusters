@@ -1,0 +1,152 @@
+{
+    "key": "group_6380d093be07f",
+    "title": "Block: Bundesliga 1Spielplan",
+    "fields": [
+        {
+            "key": "field_6380d0940e314",
+            "label": "Zeile",
+            "name": "row",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "Eintrag hinzufügen",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_6380d0947fb74",
+                    "label": "Spielnummer",
+                    "name": "spielnummer",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "parent_repeater": "field_6380d0940e314"
+                },
+                {
+                    "key": "field_6380d09483600",
+                    "label": "Zeit",
+                    "name": "zeit",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "parent_repeater": "field_6380d0940e314"
+                },
+                {
+                    "key": "field_6380d094870a8",
+                    "label": "Mannschaft 1",
+                    "name": "mannschaft_1",
+                    "aria-label": "",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "Black Knights Dreieich 1": "Black Knights Dreieich 1",
+                        "Black Knights Dreieich 2": "Black Knights Dreieich 2",
+                        "Star Drivers Bad Kreuznach": "Star Drivers Bad Kreuznach",
+                        "Rolli Teufel Ludwigshafen": "Rolli Teufel Ludwigshafen",
+                        "Munich Animals": "Munich Animals",
+                        "Nording Bulls Lalendorf": "Nording Bulls Lalendorf"
+                    },
+                    "default_value": false,
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "return_format": "value",
+                    "ajax": 0,
+                    "placeholder": "",
+                    "parent_repeater": "field_6380d0940e314"
+                },
+                {
+                    "key": "field_6380d0948ab33",
+                    "label": "Mannschaft 2",
+                    "name": "mannschaft_2",
+                    "aria-label": "",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "Black Knights Dreieich 1": "Black Knights Dreieich 1",
+                        "Black Knights Dreieich 2": "Black Knights Dreieich 2",
+                        "Star Drivers Bad Kreuznach": "Star Drivers Bad Kreuznach",
+                        "Rolli Teufel Ludwigshafen": "Rolli Teufel Ludwigshafen",
+                        "Munich Animals": "Munich Animals",
+                        "Nording Bulls Lalendorf": "Nording Bulls Lalendorf"
+                    },
+                    "default_value": false,
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "return_format": "value",
+                    "ajax": 0,
+                    "placeholder": "",
+                    "parent_repeater": "field_6380d0940e314"
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/spielplan1liga"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1680819292
+}

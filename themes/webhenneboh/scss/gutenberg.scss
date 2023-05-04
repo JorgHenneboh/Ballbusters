@@ -1,0 +1,1071 @@
+@charset 'utf-8';
+@import "settings";
+@import "mixins";
+@import "fonts";
+@import "foundation";
+
+.editor-rich-text,
+.editor-styles-wrapper,
+.acf-block-preview {
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+// Video Blocks
+.editor-styles-wrapper {
+  .headline-overlay {
+    p, span, label {
+      font-size: rem-calc(14);
+    }
+
+    p {
+      margin-bottom: $grid-column-gutter/6;
+      margin-top: 0;
+    }
+  }
+}
+
+// .block-editor .editor-styles-wrapper h1,
+// .block-editor .editor-styles-wrapper h2,
+// .block-editor .editor-styles-wrapper h3,
+// .block-editor .editor-styles-wrapper h4,
+// .block-editor .editor-styles-wrapper h5,
+// .block-editor .editor-styles-wrapper h6,
+// .editor-post-title__block .editor-post-title__input {
+//   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+// }
+
+.edit-post-visual-editor .editor-block-list__block,
+.wp-block.editor-post-title__block {
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+.box-icon {
+  .size-thumbnail {
+    width: 50%;
+    height: 50%;
+  }
+}
+
+/*---------------------------------------------------
+# Elements Space
+---------------------------------------------------*/
+
+.main {
+  padding: 0;
+
+  ul {
+    margin-left: $grid-column-gutter/3;
+  }
+}
+
+.box,
+.box-items,
+.box-partner,
+.video-youtube,
+.video-vimeo,
+.ww-img-video-gallery,
+.breadcrumb,
+.btn-download,
+.section,
+.wp-block-columns,
+.wp-block-gallery,
+.wp-block-table,
+.form-validate,
+div[class^="grids-s-"],
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+label,
+ol,
+p,
+span,
+ul {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: $global-width;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.box,
+.box-items,
+.box-partner,
+.ww-img-video-gallery,
+.wp-block-columns,
+.wp-block-table,
+.form-validate,
+div[class^="grids-s-"] {
+  margin-bottom: $grid-column-gutter;
+}
+
+.is-style-intent {
+  padding-right: $grid-column-gutter * 2;
+}
+
+/*---------------------------------------------------
+# Custom Elements
+-----------------------------------------------------*/
+a {
+  &:focus,
+  &:hover {
+    color: $orange;
+    text-decoration: none;
+  }
+}
+
+/*---------------------------------------------------
+# Video Blocks
+---------------------------------------------------*/
+.block-editor__container img {
+  width: 100%;
+}
+
+.video-youtube,
+.video-vimeo {
+  margin-bottom: 0;
+  padding-top: 56.25%;
+  position: relative;
+
+  .headline-overlay {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    width: 100%;
+
+    .symbol {
+      margin-top: -$grid-column-gutter;
+    }
+  }
+
+  iframe,
+  picture {
+    border: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.video-youtube:hover,
+.video-vimeo:hover,
+.videostart-youtube:focus,
+.videostart-vimeo:focus {
+  .symbol {
+    transform: scale(1.15);
+  }
+}
+
+.videostart-youtube,
+.videostart-vimeo {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+
+  .symbol {
+    height: rem-calc(75);
+    width: rem-calc(75);
+    transition: transform .25s;
+    z-index: 10;
+  }
+}
+
+.webvideo-privacy {
+  background: $light-gray;
+  padding: $grid-column-gutter/4;
+  position: absolute;
+  left: 50%;
+  top: 65%;
+  transform: translateX(-50%);
+  width: 85%;
+  z-index: 10;
+
+  label, p, span {
+    font-size: rem-calc(16);
+    margin: 0;
+  }
+
+  p {
+    margin-bottom: $grid-column-gutter/4;
+  }
+}
+
+.wp-block-column {
+  .video-youtube,
+  .video-vimeo {
+    margin-bottom: 10rem;
+  }
+
+  .videostart-youtube,
+  .videostart-vimeo {
+    .symbol {
+      margin-top: 0;
+    }
+  }
+
+  .webvideo-privacy {
+    position: static;
+    transform: none;
+    width: 100%;
+  }
+}
+
+/*---------------------------------------------------
+# Video Gallery
+---------------------------------------------------*/
+.ww-img-video-gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: rem-calc(20);
+}
+
+.video-js .vjs-control-bar {
+  height: 3.5rem !important;
+}
+
+.videogallery-youtube,
+.videogallery-vimeo,
+.videogallery-standard {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  background: $light-gray;
+
+  img {
+    margin: 0;
+  }
+
+  .headline-overlay {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: rem-calc(12);
+    display: block;
+    padding: $grid-column-gutter/4;
+    position: absolute;
+    bottom: auto;
+    left: 50%;
+    top: 2%;
+    transform: translateX(-50%);
+    height: auto;
+    width: 95%;
+    z-index: 100;
+
+    p {
+      margin: $grid-column-gutter/6 0;
+    }
+
+    .symbol {
+      fill: $white;
+      height: rem-calc(35);
+      transition: transform .15s;
+
+      circle {
+        fill: $pp-green;
+      }
+    }
+  }
+}
+
+.videogallery-youtube,
+.videogallery-vimeo {
+  iframe {
+    border: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.videogallery-standard {
+  overflow: hidden;
+
+  .headline-overlay {
+    display: flex;
+    align-items: center;
+
+    .symbol {
+      width: rem-calc(80);
+      height: auto;
+    }
+  }
+
+  .videolink-overlay {
+    display: block;
+  }
+}
+
+.videogallerystart-youtube,
+.videogallerystart-vimeo,
+.videogallerystart-standard {
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+  &:focus,
+  &:hover {
+    .symbol {
+      transform: scale(1.25);
+    }
+  }
+}
+
+.videogallerystart-standard {
+  height: 100%;
+}
+
+/*---------------------------------------------------
+# Custom Blocks
+-----------------------------------------------------*/
+.box {
+  .tile-link {
+    color: $primary-color;
+    text-decoration: none;
+  }
+
+  .tile-link:focus,
+  .tile-link:hover {
+    text-decoration: underline;
+
+    .btn {
+      background: $primary-color;
+      color: $white;
+      text-decoration: underline;
+    }
+  }
+}
+
+// Tiles vertical
+// -----------------------------------------------------
+.box-tiles {
+  padding: $grid-column-gutter;
+  background: $secondary-color;
+  height: 100%;
+  margin-bottom: $grid-column-gutter;
+
+  .wp-block-image {
+    overflow: hidden;
+    max-width: auto;
+    margin-top: -$grid-column-gutter;
+    margin-left: -$grid-column-gutter;
+    margin-right: -$grid-column-gutter;
+  }
+
+  .tile-link {
+    display: block;
+    height: 100%;
+
+    &:focus,
+    &:hover {
+      img {
+        transform: scale(1.05);
+      }
+    }
+
+    img {
+      transition: transform 0.15s;
+    }
+  }
+}
+
+.box-grid {
+  height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+// Tiles horizontal
+// -----------------------------------------------------
+.box-tile-horz-img {
+  &.bthi-left {
+    .tile-content {
+      order: 2;
+    }
+
+    .wp-block-image {
+      order: 1;
+    }
+  }
+
+  &.bthi-right {
+    .tile-content {
+      order: 1;
+    }
+
+    .wp-block-image {
+      order: 2;
+    }
+  }
+
+  .tile-link {
+    background: $secondary-color;
+    display: grid;
+    display: -ms-grid;
+    flex-wrap: wrap;
+    grid-template-rows: auto;
+    -ms-grid-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr;
+    height: 100%;
+  }
+
+  img {
+    transition: transform 0.15s;
+  }
+
+  &:focus,
+  &:hover {
+    img {
+      transform: scale(1.05);
+    }
+  }
+
+  .wp-block-image {
+    overflow: hidden;
+    margin-bottom: 0;
+    margin-top: 0;
+    width: 100%;
+  }
+
+  .tile-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: $grid-column-gutter/2;
+  }
+
+  .tile-items {
+    width: 75%;
+  }
+}
+
+
+// Highlight
+// -----------------------------------------------------
+.box-highlight {
+  background: $secondary-color;
+  padding: $grid-column-gutter/2;
+
+  h2 {
+    margin-top: 0;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+}
+
+// Team
+// -----------------------------------------------------
+
+.editor-styles-wrapper {
+  .box-team {
+    h3,
+    h4 {
+      font-style: normal;
+      font-weight: normal;
+      margin-top: 0;
+    }
+
+    h4 {
+      margin-bottom: 0;
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+    }
+
+    .wp-block-image {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.box-team {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  position: relative;
+  height: 100%;
+
+  .t-content {
+    display: block;
+    padding: $grid-column-gutter / 2 $grid-column-gutter / 4;
+    //background: $light-gray;
+    border-top: 6px solid $primary-color;
+    width: 100%;
+    height: 100%;
+  }
+
+  h4 {
+    margin: 0 0 $grid-column-gutter/6;
+  }
+
+  li,
+  span {
+    font-size: rem-calc(21);
+    font-style: normal;
+    display: block;
+  }
+
+  .t-info {
+    list-style-type: none;
+    margin: 0;
+
+    li {
+      margin-bottom: $grid-column-gutter / 4;
+    }
+  }
+
+  .t-additional {
+    display: block;
+  }
+
+  .vcard-link {
+    display: flex;
+    border-top: 1px solid $black;
+    padding-top: $grid-column-gutter / 4;
+    position: absolute;
+    bottom: $grid-column-gutter/2;
+    left: $grid-column-gutter/4;
+    right: $grid-column-gutter/4;
+
+    &:before {
+      content: '';
+      background: url("../img/icons.svg#vcard-icon") center/contain no-repeat;
+      display: inline-block;
+      width: rem-calc(50);
+      height: rem-calc(30);
+      margin-right: rem-calc(10);
+    }
+  }
+}
+
+// Box Icons
+// -----------------------------------------------------
+.box-icon {
+  text-align: center;
+
+  .wp-block-image {
+    padding: 50%;
+    border-radius: 50%;
+    background: $secondary-color;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+  }
+
+  img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 50%;
+    height: 50%;
+  }
+}
+
+// Tiles Drawer
+// -----------------------------------------------------
+
+.content-head {
+  padding-bottom: 0;
+}
+
+.content-box {
+  padding-top: 0;
+}
+
+.box-items {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: rem-calc(20);
+}
+
+.box-image,
+.box-item {
+  width: 100%;
+}
+
+.box-content-drawer,
+a.box-content-drawer {
+  //margin: $grid-column-gutter/4 0;
+  position: relative;
+  overflow: hidden;
+  color: $white;
+  display: block;
+}
+
+.box-drawer {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.15s ease;
+  z-index: 1;
+  padding: $grid-column-gutter/3 $grid-column-gutter/3 $grid-column-gutter/3;
+  background: $light-gray;
+  color: $primary-color;
+  border-top: 6px solid $orange;
+
+  .box-content-drawer:focus &,
+  .box-content-drawer:hover & {
+    bottom: 0;
+  }
+
+  h3 {
+    font-size: rem-calc(32);
+    margin-bottom: $grid-column-gutter/4;
+  }
+
+  ul {
+    margin-bottom: 0;
+    font-size: rem-calc(18);
+  }
+}
+
+.box-text {
+  position: relative;
+  z-index: 3;
+}
+
+.box-handle {
+  border-radius: 100%;
+  background: $light-gray;
+  color: $primary-color;
+  font-weight: 400;
+  padding: 9rem 0 $grid-column-gutter/4;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  text-align: center;
+  transform: translateX(-50%) translateY(40%);
+  transition: top 0.15s;
+  width: rem-calc(350);
+  z-index: 2;
+
+  .symbol {
+    fill: #E98225;
+    width: rem-calc(20);
+    height: rem-calc(22);
+  }
+}
+/*---------------------------------------------------
+# Custom Buttons
+-----------------------------------------------------*/
+.btn {
+  background: $white;
+  color: $primary-color;
+  border: 1px solid $primary-color;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: $grid-column-gutter / 4 $grid-column-gutter / 2;
+  text-decoration: none;
+  transition: background 0.15s;
+
+  &:focus,
+  &:hover {
+    background: $primary-color;
+    color: $white;
+    text-decoration: underline;
+  }
+}
+
+// Download Button
+// -----------------------------------------------------
+
+.btn-download {
+  display: block;
+  position: relative;
+  margin-bottom: $grid-column-gutter / 2;
+
+  &:focus,
+  &:hover {
+    .symbol {
+      color: $white;
+    }
+  }
+
+  span {
+    display: block;
+  }
+
+  .d-label {
+    padding-right: $grid-column-gutter * 1.5;
+    hyphens: auto;
+  }
+
+  .d-additional {
+    font-size: rem-calc(16);
+  }
+
+  .symbol {
+    width: rem-calc(35);
+    height: auto;
+    position: absolute;
+    top: 50%;
+    right: $grid-column-gutter / 4;
+    transform: translateY(-50%);
+  }
+}
+
+// Fancy Button
+// -----------------------------------------------------
+.btn-gradient {
+  border: 1px solid $medium-gray;
+  border-radius: 3px;
+  position: relative;
+
+  img {
+    position: absolute;
+    right: $grid-column-gutter / 4;
+    top: $grid-column-gutter / 8;
+    height: rem-calc(35px);
+    width: auto;
+  }
+
+  &:focus,
+  &:hover {
+    .gradient-bg {
+      animation: button-animation-rev 0.65s ease-out forwards;
+    }
+  }
+}
+
+.gradient-bg {
+  background-image: linear-gradient(45deg, $light-gray 50%, $white 50%);
+  background-size: 300%;
+  background-position: top right;
+  animation: button-animation 0.65s ease-out forwards;
+  display: table;
+  text-align: left;
+  padding: $grid-column-gutter / 4;
+  cursor: pointer;
+  width: rem-calc(150);
+}
+
+.gradient-text {
+  /* Fallback: Set a background color. */
+  background-color: $dark-gray;
+  /* Create the gradient. */
+  background-image: linear-gradient(45deg, $dark-gray 50%);
+  /* Set the background size and repeat properties. */
+  background-size: 300%;
+  background-position: top right;
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  animation: button-animation 0.65s ease-out forwards;
+  font-size: $global-font-size * .95;
+}
+@keyframes button-animation {
+  0% {
+    background-position: top right;
+  }
+
+  100% {
+    background-position: top left;
+  }
+}
+@keyframes button-animation-rev {
+  0% {
+    background-position: top left;
+  }
+
+  100% {
+    background-position: top right;
+  }
+}
+
+/*---------------------------------------------------
+# Overwrite Buttons
+-----------------------------------------------------*/
+.wp-block-button {
+  margin: $grid-column-gutter 0;
+
+  .wp-block-button__link {
+    background: $white;
+    border: 2px solid $primary-color;
+    color: $dark-gray;
+    border-radius: 4px;
+    padding: $grid-column-gutter / 4;
+    display: block;
+
+    &:focus,
+    &:hover {
+      background: $primary-color;
+      color: $white;
+    }
+  }
+}
+
+/*---------------------------------------------------
+# Slider Preview
+-----------------------------------------------------*/
+.slider {
+  display: flex;
+  flex-wrap: wrap;
+
+  > div {
+    height: 100%;
+    width: 20%;
+  }
+
+  figure {
+    margin: 0;
+  }
+}
+
+// Grid
+// -------------------------------------
+.grids-areas-wrapper {
+  margin-left: -$grid-column-gutter/4;
+  margin-right: -$grid-column-gutter/4;
+
+  .block-editor-block-list__layout {
+    > div {
+      background-color: $secondary-color;
+      margin: $grid-column-gutter/4;
+    }
+  }
+}
+
+
+/*---------------------------------------------------
+# Accordion
+-----------------------------------------------------*/
+@keyframes pl {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+.wp-block-columns {
+  .accordion {
+    margin-bottom: 0;
+  }
+}
+
+.accordion {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: $global-width;
+  margin-bottom: $grid-column-gutter;
+}
+
+.a-item {
+  display: block;
+  text-decoration: none;
+  color: $primary-color;
+  background: $secondary-color;
+  margin-bottom: $grid-column-gutter / 4;
+  position: relative;
+  padding: $grid-column-gutter/4 $grid-column-gutter/6;
+  transition: background 0.15s;
+
+  &:focus,
+  &:hover {
+    background: $white;
+    text-decoration: underline;
+  }
+
+  h3 {
+    margin: 0;
+  }
+
+  .a-icon {
+    background: url("../img/icons.svg#accordion") center/contain no-repeat;
+    content: '';
+    display: inline-block;
+    position: absolute;
+    right: $grid-column-gutter/2 - rem-calc(30);
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .symbol {
+    width: rem-calc(50);
+    height: rem-calc(50);
+  }
+}
+
+/*---------------------------------------------------
+# Formular
+-----------------------------------------------------*/
+
+.wp-core-ui select {
+  min-height: auto;
+  max-width: 100%;
+  height: rem-calc(45);
+}
+
+//Custom Select
+
+.form-validate {
+  select {
+    appearance: none;
+    background-color: transparent;
+    border: none;
+    padding: rem-calc(8) $grid-column-gutter/6;
+    margin: 0;
+    width: 100%;
+    font-family: inherit;
+    font-size: rem-calc(20);
+    cursor: inherit;
+    line-height: inherit;
+    z-index: 1;
+    color: $primary-color;
+
+    &::-ms-expand {
+      display: none;
+    }
+    outline: none;
+  }
+
+  .select {
+    // display: grid;
+    // grid-template-areas: "select";
+    // align-items: center;
+    // position: relative;
+    //
+    // &::after,
+    // select {
+    //   grid-area: select;
+    // }
+    border: 1px solid $primary-color;
+    border-radius: 0.25em;
+    font-size: 1.25rem;
+    cursor: pointer;
+    line-height: 1.1;
+    background-color: #fff;
+    background-image: linear-gradient(to top, #f9f9f9, #fff 33%);
+
+    // &:not(.select--multiple)::after {
+    //   content: "";
+    //   justify-self: end;
+    //   width: 0.8em;
+    //   height: 0.5em;
+    //   background-color: $primary-color;
+    //   clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+    // }
+  }
+
+  select:focus + .focus {
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    right: -1px;
+    bottom: -1px;
+    border: 2px solid $dark-blue;
+    border-radius: inherit;
+  }
+
+  select[multiple] {
+    padding-right: 0;
+    height: 6rem;
+
+    option {
+      white-space: normal;
+      outline-color: #000;
+    }
+  }
+
+  .select--disabled {
+    cursor: not-allowed;
+    background-color: #eee;
+    background-image: linear-gradient(to top, #ddd, #eee 33%);
+  }
+
+  .select + label {
+    margin-top: 2rem;
+  }
+  //Custom Checkbox
+  //Formular
+  label[for=privacy] {
+    font-size: rem-calc(20);
+  }
+
+  input[type='text'],
+  input[type='email'],
+  input[type='tel'],
+  textarea {
+    font-family: inherit;
+    padding: rem-calc(12);
+    background-color: #fff;
+    border: 1px solid $primary-color;
+    border-radius: 4px;
+    transition: 180ms box-shadow ease-in-out;
+    width: 100%;
+    color: $primary-color;
+    font-size: rem-calc(20);
+
+    &:focus,
+    &:hover {
+      border-color: $dark-blue;
+      box-shadow: 0 0 0 3px rgba(3,71,103, 0.4);
+      outline: 3px solid transparent;
+    }
+  }
+
+  input[type='checkbox'] {
+    width: rem-calc(15);
+    height: rem-calc(15);
+  }
+
+  textarea {
+    min-height: rem-calc(200);
+  }
+
+  .required {
+    &::after {
+      content: "*";
+    }
+  }
+
+  .error {
+    color: $red;
+    display: block;
+  }
+  // Honeypot.
+  .special {
+    display: none;
+  }
+  @include breakpoint(xxlarge) {
+    .orderform {
+      width: 90%;
+    }
+  }
+}

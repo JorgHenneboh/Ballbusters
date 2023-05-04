@@ -1,0 +1,83 @@
+<!-- wp:html -->
+<div id="sidebar">
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<div id="sidebar-item">
+<!-- /wp:html -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Nächste Termine</h2>
+<!-- /wp:heading -->
+
+<!-- wp:html -->
+<div id="event-start">
+
+
+      <div class="event-item">
+          <p>13. Mai 2023 9:00 –  20:00 Uhr</p>
+            <h3>1. PCH-Bundesliga 4. Spieltag</h3>
+
+
+            <span class="ort">
+              Bad Kreuznach
+            </span>
+
+            </div>
+            <div class="event-item">
+<p>20. Mai 2023 9:30 –  19:00 Uhr</p>
+                  <h3>2. PCH-Bundesliga 3. Spieltag</h3>
+
+
+                  <span class="ort">
+                    Th&uuml;ngersheim
+                  </span>
+
+                  </div>
+            <div class="event-item">
+                <p>24. Juni 2023 9:00 –  20:00 Uhr</p>
+<h3>1. PCH-Bundesliga 5. Spieltag</h3>
+
+                  <span class="ort">
+                    Th&uuml;ngersheim
+                  </span>
+
+                  </div>
+                  </div>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+</div><div id="spenden-item">
+<!-- /wp:html -->
+
+<!-- wp:shortcode -->
+[betterplace-widget projekt="70325?l" width="318px"  ]
+<!-- /wp:shortcode -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:html -->
+</div><div id="sidebar-item">
+<!-- /wp:html -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Tabelle 2. Bundesliga Saison 2022/23</h2>
+<!-- /wp:heading -->
+
+<!-- wp:block {"ref":4684} /-->
+
+<!-- wp:html -->
+</div><div id="sidebar-item">
+<!-- /wp:html -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Tabelle 1. Bundesliga Saison 2022/23</h2>
+<!-- /wp:heading -->
+
+<!-- wp:block {"ref":4695} /-->
+
+<!-- wp:html -->
+</div></div>
+<!-- /wp:html -->

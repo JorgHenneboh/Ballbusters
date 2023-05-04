@@ -1,0 +1,510 @@
+{
+    "key": "group_5e748e6a32a64",
+    "title": "Formularfelder",
+    "fields": [
+        {
+            "key": "field_5e748e9ccee8f",
+            "label": "Standardfelder",
+            "name": "standard_fields",
+            "aria-label": "",
+            "type": "checkbox",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "firstname": "Vorname",
+                "lastname": "Nachname",
+                "email": "E-Mail"
+            },
+            "allow_custom": 0,
+            "default_value": [],
+            "layout": "vertical",
+            "toggle": 0,
+            "return_format": "value",
+            "save_custom": 0,
+            "custom_choice_button_text": "Eine neue Auswahlmöglichkeit hinzufügen"
+        },
+        {
+            "key": "field_5e74991c2e3cb",
+            "label": "Extrafelder",
+            "name": "extra_fields",
+            "aria-label": "",
+            "type": "flexible_content",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layouts": {
+                "layout_5e749930abeb6": {
+                    "key": "layout_5e749930abeb6",
+                    "name": "textfields",
+                    "label": "Textfelder",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5e74c38d0abb8",
+                            "label": "Textfelder",
+                            "name": "textfields",
+                            "aria-label": "",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "collapsed": "",
+                            "min": 1,
+                            "max": 0,
+                            "layout": "block",
+                            "button_label": "Textfeld hinzufügen",
+                            "rows_per_page": 20,
+                            "sub_fields": [
+                                {
+                                    "key": "field_5e7499892e3cc",
+                                    "label": "Name",
+                                    "name": "name",
+                                    "aria-label": "",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 1,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": "",
+                                    "parent_repeater": "field_5e74c38d0abb8"
+                                },
+                                {
+                                    "key": "field_5e7499b82e3cd",
+                                    "label": "Pflichtfeld",
+                                    "name": "mandatory",
+                                    "aria-label": "",
+                                    "type": "true_false",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "message": "",
+                                    "default_value": 0,
+                                    "ui": 0,
+                                    "ui_on_text": "",
+                                    "ui_off_text": "",
+                                    "parent_repeater": "field_5e74c38d0abb8"
+                                },
+                                {
+                                    "key": "field_5ea6c23a6e67f",
+                                    "label": "Typ",
+                                    "name": "type",
+                                    "aria-label": "",
+                                    "type": "select",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "choices": {
+                                        "text": "Text",
+                                        "email": "E-Mail",
+                                        "tel": "Telefon"
+                                    },
+                                    "default_value": false,
+                                    "allow_null": 0,
+                                    "multiple": 0,
+                                    "ui": 0,
+                                    "return_format": "value",
+                                    "ajax": 0,
+                                    "placeholder": "",
+                                    "parent_repeater": "field_5e74c38d0abb8"
+                                },
+                                {
+                                    "key": "field_5ea6c2c66e680",
+                                    "label": "Auto-Vervollständigung",
+                                    "name": "autocomplete",
+                                    "aria-label": "",
+                                    "type": "select",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "choices": {
+                                        "default": "Standard",
+                                        "off": "Aus",
+                                        "given-name": "Vorname",
+                                        "family-name": "Nachname",
+                                        "address-line1": "Straße",
+                                        "address-line2": "Adresszusatz",
+                                        "postal-code": "PLZ",
+                                        "address-level2": "Ort",
+                                        "tel-national": "Telefon (national) Typ text",
+                                        "tel": "Telefon (international) Typ tel",
+                                        "email": "E-Mail Typ email"
+                                    },
+                                    "default_value": false,
+                                    "allow_null": 0,
+                                    "multiple": 0,
+                                    "ui": 0,
+                                    "return_format": "value",
+                                    "ajax": 0,
+                                    "placeholder": "",
+                                    "parent_repeater": "field_5e74c38d0abb8"
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5e749ae47e190": {
+                    "key": "layout_5e749ae47e190",
+                    "name": "checkboxes",
+                    "label": "Checkboxen",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5e749b287e191",
+                            "label": "Checkboxen",
+                            "name": "checkboxes",
+                            "aria-label": "",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "collapsed": "",
+                            "min": 1,
+                            "max": 0,
+                            "layout": "block",
+                            "button_label": "Checkbox hinzufügen",
+                            "rows_per_page": 20,
+                            "sub_fields": [
+                                {
+                                    "key": "field_5e749b647e192",
+                                    "label": "Name",
+                                    "name": "name",
+                                    "aria-label": "",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 1,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": "",
+                                    "parent_repeater": "field_5e749b287e191"
+                                },
+                                {
+                                    "key": "field_5e749b907e193",
+                                    "label": "Pflichtfeld",
+                                    "name": "mandatory",
+                                    "aria-label": "",
+                                    "type": "true_false",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "message": "",
+                                    "default_value": 0,
+                                    "ui": 0,
+                                    "ui_on_text": "",
+                                    "ui_off_text": "",
+                                    "parent_repeater": "field_5e749b287e191"
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5e749be77e194": {
+                    "key": "layout_5e749be77e194",
+                    "name": "radioboxes",
+                    "label": "Radioboxen",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5e76313e97411",
+                            "label": "Gruppenname",
+                            "name": "groupname",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5e749be77e195",
+                            "label": "Radioboxen",
+                            "name": "radioboxes",
+                            "aria-label": "",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "collapsed": "",
+                            "min": 1,
+                            "max": 0,
+                            "layout": "block",
+                            "button_label": "Radiobox hinzufügen",
+                            "rows_per_page": 20,
+                            "sub_fields": [
+                                {
+                                    "key": "field_5e749be77e196",
+                                    "label": "Name",
+                                    "name": "name",
+                                    "aria-label": "",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 1,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": "",
+                                    "parent_repeater": "field_5e749be77e195"
+                                }
+                            ]
+                        },
+                        {
+                            "key": "field_5e749be77e197",
+                            "label": "Pflichtfelder",
+                            "name": "mandatory",
+                            "aria-label": "",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "",
+                            "default_value": 0,
+                            "ui": 0,
+                            "ui_on_text": "",
+                            "ui_off_text": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5e776fa63e468": {
+                    "key": "layout_5e776fa63e468",
+                    "name": "message",
+                    "label": "Nachricht",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5e776fd13e469",
+                            "label": "Name",
+                            "name": "name",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "Nachricht",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5e77701a3e46a",
+                            "label": "Pflichtfeld",
+                            "name": "mandatory",
+                            "aria-label": "",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "",
+                            "default_value": 0,
+                            "ui": 0,
+                            "ui_on_text": "",
+                            "ui_off_text": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                }
+            },
+            "button_label": "Felder hinzufügen",
+            "min": "",
+            "max": ""
+        },
+        {
+            "key": "field_5e77691573c49",
+            "label": "Datenschutz",
+            "name": "privacy_fields",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_5e77696773c4a",
+                    "label": "Text vor Link",
+                    "name": "text_before",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5e77698173c4b",
+                    "label": "Link",
+                    "name": "link",
+                    "aria-label": "",
+                    "type": "page_link",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "post_type": [
+                        "page"
+                    ],
+                    "taxonomy": "",
+                    "allow_null": 0,
+                    "allow_archives": 0,
+                    "multiple": 0
+                },
+                {
+                    "key": "field_5e776c5c01749",
+                    "label": "Text nach Link",
+                    "name": "text_after",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "forms"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": false,
+    "modified": 1680819292
+}

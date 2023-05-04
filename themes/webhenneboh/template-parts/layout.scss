@@ -1,0 +1,1959 @@
+@charset 'utf-8';
+@import 'settings';
+@import 'mixins';
+@import 'fonts';
+@import 'foundation';
+@include foundation-global-styles;
+@include foundation-typography;
+@include foundation-visibility-classes; // Custom Elements
+#bundesliga{
+  width: 350px;
+}
+ #eins {
+  display: none;
+}
+
+div#event-start{
+  width: 350px;
+  .event-item{
+    padding: .5rem;
+    border-bottom: #b20202 solid 1px;
+  }
+}
+#sidebar{
+  width: 350px;
+#spenden-item{
+width: 318px;
+margin: 0 auto;
+}
+#sidebar-item{
+  margin-bottom: 2rem;
+  padding: 0 16px;
+  h2{
+    font-size: 16px;
+    border-bottom: #b20202 solid 1px;
+  }
+
+}
+
+}
+header {
+  position: relative;
+}
+
+h1 {
+  padding: 1rem 0;
+}
+
+#tile {
+  border: 1px solid $green;
+}
+
+#tile #link {
+  position: relative;
+
+  &:focus,
+  &:hover {
+    .btn-mehr,
+    h2 {
+      background: #fff;
+      color: $green;
+    }
+  }
+
+  .btn-mehr {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #fff;
+    background: $green;
+    z-index: 5;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  h2 {
+    padding: 0.5rem 1rem;
+    font-size: 30px;
+    margin: 0 auto;
+    background: $green;
+    left: 2rem;
+    color: #fff;
+    display: block;
+  }
+}
+
+.home {
+  .header-logo_pchb {
+    margin-left: 1rem;
+  }
+}
+@media screen and (max-width:768px) {
+  #headline {
+    display: none;
+  }
+}
+
+.outer {
+  main {
+    max-width: $global-width;
+    display: block;
+    margin: 0 auto;
+    padding: 1rem;
+    min-height: 600px;
+    @media screen and (min-width: 2400px) {
+      max-width: 1640px;
+      font-size: 20.5px;
+    }
+    @media screen and (min-width: 3440px) {
+      max-width: 2400px;
+      font-size: 32px;
+    }
+  }
+}
+
+.btn-download {
+  display: block;
+  border: solid 1px #000;
+  margin: 1rem;
+  padding: 1rem;
+  margin-left: 0;
+  border-radius: 10px;
+  position: relative;
+
+  .symbol {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+  }
+
+  span {
+    display: block;
+  }
+
+  &:focus,
+  &:hover {
+    background: $primary-color;
+    color: #fff;
+  }
+}
+
+#header,
+#header-eball,
+#header-pcf,
+#header-pch,
+#header-pch-nationalmannschaft,
+#header-wettbewerbsarchiv {
+  #header-bar picture img {
+    min-width: 100%;
+  }
+}
+
+#header-bar {
+  position: relative;
+  margin-top: -1rem;
+}
+
+.logo,
+.logo-header-pch {
+  text-align: center;
+}
+
+#skiplinks {
+  list-style-type: none;
+}
+
+.symbol {
+  width: 50px;
+  height: 50px;
+  @media screen and (min-width: 2400px) {
+    width: 70px;
+    height: 70px;
+  }
+  @media screen and (min-width: 3440px) {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+#breadcrumb-menu {
+  display: flex;
+  justify-content: flex-start;
+  list-style-type: none;
+  @media screen and (min-width: 3440px) {
+    font-size: 33px;
+
+    li {
+      margin-right: 2rem;
+    }
+  }
+
+  li {
+    margin-right: 1rem;
+    position: relative;
+
+    &::after {
+      content: "\203A";
+      position: absolute;
+      transform: rotate(0deg);
+      right: -1rem;
+      font-size: 50px;
+      top: -1.9rem;
+      @media screen and (min-width: 2400px) {
+        top: -1.6rem;
+      }
+      @media screen and (min-width: 3440px) {
+        font-size: 52px;
+        top: -1.25rem;
+        right: -1.5rem;
+      }
+    }
+  }
+
+  li:last-child::after {
+    display: none;
+  }
+}
+@media screen and (min-width: 3440px) {
+  #breadcrumb-menu li {
+    margin-right: 2rem;
+  }
+}
+
+footer {
+  @media screen and (min-width: 2400px) {
+    font-size: 21px;
+  }
+  @media screen and (min-width: 3440px) {
+    font-size: 36px;
+  }
+}
+
+#header,
+#header-eball {
+  #header-bar #search-feld {
+    left: -18rem;
+  }
+}
+
+#search-feld {
+  background: $primary-color;
+  z-index: 10000;
+  display: flex;
+  justify-content: flex-end;
+
+  .search-box {
+    display: none;
+    min-width: 375px;
+    min-width: 375px;
+    padding: 5px;
+    font-size: 16px;
+
+    button,
+    form {
+      color: #fff;
+    }
+
+    button.btn.btn-reset,
+    button.btn.btn-submit {
+      &:focus,
+      &:hover {
+        background: $primary-color;
+      }
+    }
+
+    button.btn.btn-reset {
+      display: inline-block;
+      padding: 8px 12px;
+      background: #ccc;
+      cursor: pointer;
+
+      span {}
+    }
+
+    button.btn.btn-submit {
+      cursor: pointer;
+      padding: 8px 12px;
+      background: #ccc;
+      border-radius: 5px;
+    }
+  }
+}
+
+.main-nav {}
+
+.menu-button {
+  cursor: pointer;
+  width: 55px;
+
+  &:focus,
+  &:hover {
+    .menu-button-inner {
+      &,
+      &::after,
+      &::before {}
+    }
+
+    .menu-button-label {}
+  }
+
+  &.active {
+    .menu-button-inner {
+      transform: rotate(225deg);
+      transition-delay: 0.12s;
+      transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+
+      &::before {
+        opacity: 0;
+        top: 0;
+        transition: top 0.1s ease-out, opacity 0.1s 0.12s ease-out;
+      }
+
+      &::after {
+        bottom: 0;
+        transform: rotate(-90deg);
+        transition: bottom 0.1s ease-out, transform 0.22s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
+      }
+    }
+  }
+}
+
+.menu-button-box {}
+
+.menu-button-inner {
+  display: block;
+  transition-duration: 0.25s;
+  transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+
+  &,
+  &::after,
+  &::before {
+    background-color: #fff;
+    border-radius: rem-calc(2);
+    height: rem-calc(2);
+    position: absolute;
+    transition: transform 0.25s ease;
+    width: rem-calc(40);
+  }
+
+  &::after,
+  &::before {
+    content: "";
+    display: block;
+  }
+
+  &::before {
+    right: rem-calc(0);
+    top: rem-calc(11);
+    transition: top 0.1s 0.25s ease-in, opacity 0.1s ease-in;
+  }
+
+  &::after {
+    bottom: rem-calc(11);
+    right: rem-calc(0);
+    transition: bottom 0.1s 0.25s ease-in, transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+}
+
+.menu-button-label {
+  color: #fff;
+}
+
+.box-team {
+  ul {
+    list-style-type: none;
+    margin: 0;
+  }
+
+  .t-content {
+    padding: 1rem;
+
+    .locality,
+    .postal-code {
+      display: inline-block;
+    }
+
+    a {
+      color: $primary-color;
+    }
+  }
+}
+
+#header-pch-nationalmannschaft {
+  .meta-search {
+    .link-text {
+      display: none;
+    }
+  }
+
+  .facebook {
+    img {
+      width: 30px;
+    }
+  }
+
+  .instagram {
+    a .symbol {
+      color: #000;
+    }
+  }
+
+  .twitter {
+    a .symbol {
+      color: #1d9bf0;
+    }
+  }
+
+  .youtube {
+    a .symbol {
+      color: #ff0000;
+    }
+  }
+}
+
+.content-event,
+.content-news {
+  .event-item,
+  .event-item-start,
+  .post-iten,
+  .post-iten-start {
+    margin-bottom: 1rem;
+  }
+
+  a {
+    display: block;
+    border: #eee solid 1px;
+
+    &:focus,
+    &:hover {
+      background: $primary-color;
+      color: #fff;
+    }
+
+    h3 {
+      font-size: 19px;
+      margin-top: 0.25rem;
+    }
+
+    p {
+      margin-bottom: 0.25rem;
+    }
+
+    figure {
+      text-align: center;
+    }
+
+    .box-content {
+      padding: 0.5rem;
+      min-height: 340px;
+    }
+  }
+
+  .e-img img {
+    max-height: 320px;
+  }
+}
+
+#verband {
+  margin: 1rem 0 0;
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
+
+  li {
+    padding: 0.67rem;
+  }
+
+  span {
+    display: none;
+  }
+
+  .symbol {
+    width: 175px;
+    height: 85px;
+    @media screen and (min-width: 449px) {
+      width: 200px;
+      height: 100px;
+    }
+    @media screen and (min-width: 2400px) {
+      width: 270px;
+      height: 200px;
+    }
+    @media screen and (min-width: 3440px) {
+      width: 360px;
+      height: 200px;
+    }
+  }
+}
+
+footer {
+  background: #eee;
+  padding: 1rem;
+
+  #footer-menu {
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+
+    li a {
+      text-decoration: underline;
+      padding: 0 1rem;
+
+      &:focus,
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.btn-top {
+  position: fixed;
+  right: 1rem;
+  bottom: 4rem;
+
+  a {
+    color: $primary-color;
+
+    &:focus,
+    &:hover {
+      .symbol {
+        color: #fff;
+        fill: $primary-color;
+      }
+    }
+  }
+
+  .symbol {
+    fill: #eee;
+  }
+}
+@media screen and (min-width: 3400px) {
+  #bar {
+    li {
+      width: 90px;
+    }
+
+    img {
+      width: 70px;
+      transition: 0.5s;
+    }
+
+    a {
+      &:focus,
+      &:hover {
+        img {
+          width: 60px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 3439px) {
+  @media screen and (min-width: 2400px) {
+    #bar {
+      li {
+        width: 80px;
+      }
+
+      img {
+        width: 70px;
+        transition: 0.5s;
+      }
+
+      a {
+        &:focus,
+        &:hover {
+          img {
+            width: 60px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 2399px) {
+  @media screen and (min-width: 1440px) {
+    #bar {
+      li {
+        width: 80px;
+      }
+
+      img {
+        width: 70px;
+        transition: 0.5s;
+      }
+
+      a {
+        &:focus,
+        &:hover {
+          img {
+            width: 60px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 2440px) {
+  #bar {
+    li {
+      width: 70px;
+    }
+    padding-bottom: 0.5rem;
+
+    img {
+      width: 50px;
+      transition: 0.5s;
+    }
+
+    a {
+      &:focus,
+      &:hover {
+        img {
+          width: 40px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1440px) {
+  #social-bar {
+    display: flex;
+
+    .link-text,
+    .social-media span {
+      display: none;
+    }
+  }
+
+  #bar {
+    li {
+      width: 70px;
+    }
+    padding-bottom: 0.5rem;
+
+    img {
+      width: 50px;
+      transition: 0.5s;
+    }
+
+    a {
+      &:focus,
+      &:hover {
+        img {
+          width: 40px;
+        }
+      }
+    }
+  }
+
+  #search-meta-bar {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  #meta {
+    list-style-type: none;
+    margin: 0;
+
+    li {
+      padding: 5px;
+    }
+  }
+
+  .breadcrumb {
+    display: none;
+  }
+
+  .liga-ergebnis {
+    thead {
+      display: none;
+    }
+
+    tr {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 2rem;
+    }
+
+    tr td {
+      flex: 100%;
+      text-align: center;
+    }
+
+    p {
+      display: flex;
+      font-size: 22px;
+    }
+
+    .spielpaarung {
+      .res-thead {
+        padding: 0.5rem;
+      }
+      padding: 0;
+
+      p {
+        display: flex;
+        justify-content: flex-start;
+      }
+
+      img {
+        max-width: 100px;
+      }
+    }
+  }
+
+  #bar {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  #header-bar {
+    background: $primary-color;
+  }
+
+  #logo_eball,
+  #logo_fachbereich,
+  #logo_pcf,
+  #logo_pch {
+    img {
+      width: 90px;
+      height: 90px;
+    }
+  }
+
+  #logo_pchb {
+    img {
+      width: 90px;
+      height: 90px;
+    }
+  }
+
+  .logo-header-eball {
+    position: absolute;
+    left: 2rem;
+    top: 2rem;
+
+    img {
+      width: 232px;
+    }
+  }
+
+  .logo-header-pcf {
+    position: absolute;
+    bottom: 1rem;
+    left: 0.5rem;
+  }
+
+  .logo,
+  .logo-header-pch {
+    position: absolute;
+    right: 0.5rem;
+    top: 1rem;
+  }
+
+  #social-bar {
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+    .social-media {
+      #social-media-pcf,
+      #social-media-pch {
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+        margin: 0;
+
+        li {
+          padding: 5px;
+
+          a {
+            .symbol {
+              color: #fff;
+            }
+          }
+        }
+
+        span {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .main-nav {
+    #main-menu {
+      margin: 0;
+      list-style-type: none;
+      background: $primary-color;
+
+      .has-sub .sub::after {
+        content: "\203A";
+        position: absolute;
+        transform: rotate(90deg);
+        right: 2.5rem;
+        font-size: 50px;
+        top: -15px;
+      }
+
+      .open .sub::after {
+        content: "\203A";
+        transform: rotate(0);
+      }
+
+      .has-sub {
+        position: relative;
+      }
+
+      a {
+        padding: 1rem;
+        display: block;
+        color: #fff;
+      }
+
+      .sub-menu-container {
+        display: none;
+      }
+
+      #sub-menu {
+        list-style-type: none;
+        margin: 0;
+        background: #eee;
+
+        a {
+          padding-left: 6rem;
+          color: #000;
+          text-align: left;
+        }
+      }
+    }
+  }
+}
+@include breakpoint(large) {
+  #logo_eball,
+  #logo_fachbereich,
+  #logo_pcf,
+  #logo_pch {
+    img {
+      width: 150px;
+      height: 150px;
+    }
+  }
+
+  #meta {
+    margin: 0;
+  }
+
+  #logo_pchb {
+    img {
+      width: 150px;
+      height: 150px;
+    }
+  }
+
+  #bar {}
+
+  #social-bar {
+    display: flex;
+    justify-content: flex-end;
+
+    .social-media {
+      #social-media-pcf,
+      #social-media-pch {
+        float: none;
+        margin-left: 0;
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+
+        li {
+          padding: 0 0.5rem;
+
+          a {
+            &:focus,
+            &:hover {
+              .symbol {
+                color: $primary-color;
+              }
+            }
+          }
+        }
+
+        span {
+          display: none;
+        }
+      }
+    }
+
+    .meta {
+      position: relative;
+
+      #meta {
+        list-style-type: none;
+
+        li {
+          padding: 0 0.5rem;
+
+          a {
+            &:focus,
+            &:hover {
+              .symbol {
+                color: $primary-color;
+              }
+            }
+          }
+        }
+
+        .link-text {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .post-box a {
+    display: flex;
+    justify-content: flex-start;
+
+    .post-info {
+      padding: 1.75rem;
+    }
+
+    figure {
+      .place-maker {
+        min-width: 150px;
+        height: 150px;
+        display: block;
+        margin: 1rem;
+      }
+      @include breakpoint(xlarge) {
+        .place-maker {
+          min-width: 280px;
+          height: 280px;
+          display: block;
+          margin: 1rem;
+        }
+      }
+    }
+  }
+}
+@include breakpoint(xlarge) {
+  #logo_eball,
+  #logo_fachbereich,
+  #logo_pcf,
+  #logo_pch {
+    img {
+      min-width: 250px;
+      min-height: 250px;
+    }
+  }
+
+  #logo_pchb {
+    display: flex;
+    justify-content: flex-end;
+
+    img {
+      margin-right: 1rem;
+      max-width: 490px;
+      max-height: 490px;
+    }
+  }
+
+  #header .logo {
+    position: absolute;
+    top: 2rem;
+    right: 6rem;
+  }
+
+  .meta-search {
+    .link-text {
+      display: none;
+    }
+
+    .symbol {
+      color: #000;
+    }
+  }
+
+  #header-wettbewerbsarchiv .logo {
+    position: absolute;
+    top: 2rem;
+    right: 6rem;
+  }
+
+  #header-pch .logo {
+    position: absolute;
+    top: 2rem;
+    right: 6rem;
+  }
+
+  #header-pcf .logo {
+    position: absolute;
+    left: 2rem;
+    bottom: 2rem;
+  }
+
+  #header-eball .logo {
+    position: absolute;
+    left: 3rem;
+    bottom: 6rem;
+  }
+
+  #bar {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  footer {
+    display: flex;
+    justify-content: flex-end;
+    background: #eee;
+    padding: 1rem;
+
+    #footer-menu {
+      display: flex;
+      justify-content: flex-end;
+      list-style-type: none;
+
+      li a {
+        text-decoration: underline;
+        padding: 0 1rem;
+
+        &:focus,
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  .content-event,
+  .content-news {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem -.5rem;
+
+    .box-content {
+      padding: 1.5rem;
+    }
+
+    .event-item-start,
+    .post-item-start,
+    .post-iten {
+      flex: 250px;
+      padding: 0.5rem;
+    }
+
+    .event-item {
+      // display: flex;
+      flex: 25%;
+      padding: 0.5rem;
+    }
+
+    a {
+      display: inline-block;
+      max-width: 322px;
+    }
+    // #wp-block-image img {
+    //   width: 60px;
+    // }
+    #wp-block-image {
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+    }
+
+    figure {
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  /*---------------------------------------------------
+  # Tabelle
+  ---------------------------------------------------*/
+  .time p {
+    display: flex;
+    justify-content: center;
+  }
+
+  .spielpaarung p {
+    .res-tbody {}
+  }
+
+  .wp-block-table {
+    table {
+      border-spacing: 0;
+    }
+
+    thead {
+      background: $primary-color;
+
+      th {
+        border-color: #1f5da6;
+      }
+    }
+
+    tbody tr td:first-child {
+      margin-top: 1rem;
+    }
+
+    td,
+    th {
+      padding: $grid-column-gutter / 6;
+      text-align: left;
+    }
+
+    th {
+      font-weight: normal;
+      color: $white;
+    }
+
+    tr:nth-child(even) {
+      background: $light-gray;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    .res-thead {
+      display: none;
+    }
+  }
+
+  .team,
+  .team1,
+  .team2 {
+    width: 190px;
+  }
+  @media screen and (max-width:1023px) {
+    @media screen and (min-width:720px) {
+      .spielpaarung p {
+        display: flex;
+        justify-content: center;
+
+        .team1,
+        .team2 {
+          width: 380px;
+        }
+      }
+    }
+  }
+  @include breakpoint (1023px) {
+    .team {
+      width: 250px;
+    }
+
+    .liga th,
+    .res-tbody {
+
+    }
+
+    .spielpaarung p .team1 {
+      display: flex;
+      justify-content: flex-end;
+
+      span {
+        margin: 0;
+        padding-right: 0.5rem;
+      }
+    }
+
+    .spielpaarung p .team2 {
+      display: flex;
+      justify-content: flex-start;
+
+      span {
+        padding-left: 0.5rem;
+        margin: 0;
+      }
+    }
+
+    .spielpaarung p {
+      display: flex;
+      justify-content: center;
+
+      .team1,
+      .team2 {
+        width: 400px;
+      }
+    }
+
+    #headline {
+      h1 {
+        font-size: 20px;
+        background: $primary-color;
+        color: #fff;
+        border-radius: 60px;
+        padding: 0.8rem 1.8rem;
+      }
+    }
+
+    #header {
+      #headline {
+        position: absolute;
+        margin: 0 auto;
+        text-align: center;
+        top: 2rem;
+        right: 24rem;
+      }
+    }
+
+    #header-eball {
+      #headline {
+        position: absolute;
+        right: 6rem;
+        text-align: center;
+        bottom: 12rem;
+        min-width: 300px;
+      }
+    }
+
+    #header-pch {
+      #headline {
+        position: absolute;
+        right: 28rem;
+        text-align: center;
+        bottom: 12rem;
+      }
+    }
+
+    #header-wettbewerbsarchiv {
+      #headline {
+        position: absolute;
+        right: 28rem;
+        text-align: center;
+        bottom: 12rem;
+      }
+    }
+
+    #header-pcf {
+      #headline {
+        position: absolute;
+        right: 14rem;
+        text-align: center;
+        bottom: 12rem;
+      }
+    }
+  }
+  @media screen and (max-width: 1919px) {
+    #logo_eball,
+    #logo_fachbereich,
+    #logo_pcf,
+    #logo_pch {
+      img {
+        min-width: 160px;
+        min-height: 160px;
+      }
+    }
+
+    #logo_pchb {
+      display: flex;
+      justify-content: flex-end;
+
+      img {
+        margin-right: 1rem;
+        max-width: 160px;
+        max-height: 160px;
+      }
+    }
+
+    .menu-button {
+      display: none;
+    }
+
+    .main-nav {
+      background: $primary-color;
+      padding: 0;
+    }
+
+    #mobile-search {
+      display: block!important;
+      position: relative;
+      max-width: 1024px;
+      margin: 0 auto;
+
+      #main-menu {
+        display: inline-block;
+        margin: 0;
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+
+        a {
+          background: $primary-color;
+          color: #fff;
+          padding: 8px;
+
+          &:focus,
+          &:hover {
+            background: #ccc;
+            color: #000;
+          }
+        }
+
+        .sub-menu-container {
+          display: none;
+          background: $primary-color;
+          position: absolute;
+          left: 0;
+          width: 190px;
+
+          #sub-menu {
+            list-style-type: none;
+            margin: 0;
+
+            li {
+              padding: 0;
+            }
+
+            a {
+              display: block;
+              padding: 8px 10px;
+            }
+          }
+        }
+
+        .has-sub .sub::after {
+          content: "\203A";
+          position: absolute;
+          transform: rotate(90deg);
+          right: 0.5rem;
+          font-size: 40px;
+          top: -1.25rem;
+        }
+
+        .open .sub::after {
+          content: "\203A";
+          transform: rotate(0);
+        }
+
+        .has-sub {
+          position: relative;
+
+          a {
+            padding: 8px 2rem 8px 10px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 3880px) {
+  @media screen and (min-width: 1920px) {
+    #header {
+      #headline {
+        position: absolute;
+        margin: 0 auto;
+        text-align: center;
+        top: 3rem;
+        right: 24rem;
+
+        h1 {
+          font-size: 32px;
+          background: $primary-color;
+          color: #fff;
+          border-radius: 60px;
+          padding: 0.8rem 1.8rem;
+        }
+      }
+    }
+
+    #header-pch-nationalmannschaft {
+      #headline {
+        position: absolute;
+        top: 34rem;
+        left: 2rem;
+      }
+    }
+
+    #header-eball {
+      #headline {
+        position: absolute;
+        left: 2rem;
+        text-align: center;
+        bottom: 12rem;
+        min-width: 300px;
+
+        h1 {
+          background: $primary-color;
+          color: #fff;
+          border-radius: 60px;
+          font-size: 32px;
+          padding: 0.8rem 1.8rem;
+        }
+      }
+    }
+  }
+}
+
+#logo_eball,
+#logo_fachbereich,
+#logo_pcf,
+#logo_pch {
+  img {
+    min-width: 230px;
+    min-height: 230px;
+  }
+}
+
+#logo_pchb {
+  display: flex;
+  justify-content: flex-end;
+
+  img {
+    margin-right: 1rem;
+    max-width: 260px;
+    max-height: 260px;
+  }
+}
+
+.menu-button {
+  display: none;
+}
+
+.main-nav {
+  background: $primary-color;
+  display: block;
+}
+
+#mobile-search {
+  display: block!important;
+  position: relative;
+  max-width: 1024px;
+  margin: 0 auto;
+
+  #main-menu {
+    display: inline-block;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+
+    a {
+      background: #1f5da6;
+      color: #fff;
+      padding: 8px;
+      display: inline-block;
+
+      &:focus,
+      &:hover {
+        background: #ccc;
+        color: #000;
+      }
+    }
+
+    .sub-menu-container {
+      display: none;
+      background: $primary-color;
+      position: absolute;
+      width: 210px;
+
+      #sub-menu {
+        list-style-type: none;
+        margin: 0;
+
+        li {
+          padding: 0;
+        }
+
+        a {
+          display: block;
+          padding: 8px 10px;
+        }
+      }
+    }
+
+    .has-sub .sub::after {
+      content: "\203A";
+      position: absolute;
+      transform: rotate(90deg);
+      right: 0.5rem;
+      font-size: 40px;
+      bottom: -.75rem;
+    }
+
+    .open .sub::after {
+      content: "\203A";
+      transform: rotate(0);
+    }
+
+    .has-sub {
+      position: relative;
+
+      a {
+        padding: 8px 2rem 8px 10px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 3439px) {
+  @media screen and (min-width: 2400px) {
+    #header {
+      #headline {
+        position: absolute;
+        margin: 0 auto;
+        text-align: center;
+        top: 3rem;
+        right: 24rem;
+      }
+    }
+
+    #header-eball {
+      #headline {
+        position: absolute;
+        left: 2rem;
+        text-align: center;
+        bottom: 12rem;
+        min-width: 300px;
+      }
+    }
+
+    #logo_eball,
+    #logo_fachbereich,
+    #logo_pcf,
+    #logo_pch {
+      img {
+        min-width: 260px;
+        min-height: 260px;
+      }
+    }
+
+    #logo_pchb {
+      display: flex;
+      justify-content: flex-end;
+
+      img {
+        margin-right: 1rem;
+        max-width: 260px;
+        max-height: 260px;
+      }
+    }
+
+    .menu-button {
+      display: none;
+    }
+
+    .main-nav {
+      background: $primary-color;
+      display: block;
+    }
+
+    #mobile-search {
+      display: block!important;
+      position: relative;
+      max-width: 1920px;
+      margin: 0 auto;
+
+      #main-menu {
+        display: inline-block;
+        margin: 0;
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+
+        a {
+          font-size: 22px;
+          background: $primary-color;
+          color: #fff;
+          display: inline-block;
+          padding: 8px;
+
+          &:focus,
+          &:hover {
+            background: #ccc;
+            color: #000;
+          }
+        }
+
+        .sub-menu-container {
+          display: none;
+          background: $primary-color;
+          position: absolute;
+          width: 210px;
+
+          #sub-menu {
+            list-style-type: none;
+            margin: 0;
+
+            li {
+              padding: 0;
+            }
+
+            a {
+              display: block;
+              padding: 8px 10px;
+            }
+          }
+        }
+
+        .has-sub .sub::after {
+          content: "\203A";
+          position: absolute;
+          transform: rotate(90deg);
+          right: 0.5rem;
+          font-size: 40px;
+          bottom: -.15em;
+        }
+
+        .open .sub::after {
+          content: "\203A";
+          transform: rotate(0);
+        }
+
+        .has-sub {
+          position: relative;
+
+          a {
+            padding: 8px 2rem 8px 10px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 3440px) {
+  #headline h1 {
+    font-size: 26px;
+    background: $primary-color;
+    color: #fff;
+    border-radius: 60px;
+    padding: 0.8rem 1.8rem;
+  }
+
+  #header {
+    #headline {
+      position: absolute;
+      margin: 0 auto;
+      text-align: center;
+      top: 3rem;
+      right: 42rem;
+    }
+  }
+
+  #header-eball {
+    #headline {
+      position: absolute;
+      left: 2rem;
+      text-align: center;
+      bottom: 12rem;
+      min-width: 300px;
+    }
+  }
+
+  #header .logo {
+    position: absolute;
+    top: 2rem;
+    right: 6rem;
+  }
+
+  #header-pch .logo {
+    position: absolute;
+    top: 2rem;
+    right: 6rem;
+  }
+
+  #header-pcf .logo {
+    position: absolute;
+    left: 2rem;
+    bottom: 2rem;
+  }
+
+  #header-eball .logo {
+    position: absolute;
+    left: 3rem;
+    bottom: 6rem;
+  }
+
+  .menu-button {
+    display: none;
+  }
+
+  .main-nav {
+    background: $primary-color;
+  }
+
+  #mobile-search {
+    display: block!important;
+    position: relative;
+    max-width: 2400px;
+    margin: 0 auto;
+
+    #main-menu {
+      display: inline-block;
+      margin: 0;
+      list-style-type: none;
+      display: flex;
+      justify-content: center;
+
+      a {
+        font-size: 26.5px;
+        font-weight: 100;
+        background: $primary-color;
+        color: #fff;
+        display: inline-block;
+        padding: 8px 16px;
+
+        &:focus,
+        &:hover {
+          background: #ccc;
+          color: #000;
+        }
+      }
+
+      .sub-menu-container {
+        display: none;
+        background: $primary-color;
+        position: absolute;
+        width: 390px;
+
+        #sub-menu {
+          list-style-type: none;
+          margin: 0;
+
+          li {
+            padding: 0;
+          }
+
+          a {
+            display: block;
+            padding: 8px 10px;
+          }
+        }
+      }
+
+      .has-sub .sub::after {
+        content: "\203A";
+        position: absolute;
+        transform: rotate(90deg);
+        right: 0.5rem;
+        font-size: 80px;
+        bottom: -1.45rem;
+      }
+
+      .open .sub::after {
+        content: "\203A";
+        transform: rotate(0);
+      }
+
+      .has-sub {
+        .sub {
+          position: relative;
+          padding: 8px 3.25rem 8px 10px;
+        }
+      }
+    }
+  }
+}
+// Cookie-Banner
+// -----------------------------------------------------
+
+#webwerk-cookies {
+  position: fixed;
+  bottom: 0;
+  z-index: 1000;
+  background: #eee;
+  display: none;
+  width: 100%;
+
+  .cookies-container {
+    padding: 1rem;
+    @include breakpoint(xlarge) {
+      min-width: 1440px;
+      margin: 0 auto;
+      padding: $grid-column-gutter / 4;
+      border-radius: 4px;
+    }
+  }
+
+  .btn-cookie {
+    padding: 0.5rem 1rem;
+    background: #ccc;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+
+    &:focus,
+    &:hover {
+      color: #fff;
+      background: $primary-color;
+    }
+  }
+
+  h2 {
+    font-size: rem-calc(24);
+  }
+
+  h3 {
+    font-size: rem-calc(21);
+  }
+
+  ul {
+    margin: 0;
+    list-style-type: none;
+  }
+
+  a,
+  p {
+    font-size: rem-calc(16);
+  }
+
+  label {
+    font-size: rem-calc(18);
+    margin-left: rem-calc(10);
+  }
+
+  .set-options {
+    display: none;
+  }
+
+  .c-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: $grid-column-gutter / 4;
+  }
+
+  .c-input {
+    width: 50%;
+
+    input {
+      cursor: pointer;
+    }
+  }
+
+  .toggle-details {
+    display: inline-block;
+    cursor: pointer;
+    text-align: right;
+
+    span {
+      font-size: rem-calc(18);
+      text-decoration: underline;
+
+      &:focus,
+      &:hover {
+        text-decoration: none;
+        color: $blue;
+      }
+    }
+  }
+
+  .c-details {
+    display: none;
+    margin-top: $grid-column-gutter / 4;
+  }
+
+  .cookie-links {
+    margin-top: $grid-column-gutter/1.5;
+
+    a:focus,
+    a:hover {
+      color: $blue;
+    }
+  }
+}
+@include breakpoint(xlarge) {
+  #webwerk-cookies {
+    .cookies-container {
+      width: 55%;
+    }
+    // .set-options {
+    //   display: flex;
+    //   flex-wrap: wrap;
+    // }
+    .nav-cookie {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .c-buttons {
+      width: 100%;
+    }
+
+    .c-container {
+      display: inline-block;
+      flex: 1;
+    }
+
+    .c-input,
+    .toogle-details {
+      width: 100%;
+    }
+
+    .c-details {
+      order: 2;
+      width: 100%;
+      //display: block;
+    }
+
+    .toggle-details {
+      display: inline-block;
+      margin-left: $grid-column-gutter / 2.5;
+      text-align: left;
+    }
+
+    .cookie-links {
+      margin-top: $grid-column-gutter/3;
+
+      li {
+        display: inline;
+      }
+
+      a {
+        display: inline-block;
+        margin-right: rem-calc(10);
+      }
+    }
+  }
+}
+/*---------------------------------------------------
+# Video Gallery
+---------------------------------------------------*/
+
+.youtube-headline {
+  padding: 1rem;
+  min-height: 110px;
+}
+
+#youtube-oembed {
+  position: relative;
+
+  picture {
+    position: absolute;
+    top: 0;
+  }
+
+  img {
+    min-width: 424px;
+    max-height: 238px;
+  }
+
+  .webvideo-privacy {
+    padding: 1rem;
+  }
+
+  button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 424px;
+    height: 238px;
+
+    .symbol {
+      color: $primary-color;
+      background: #fff;
+      border-radius: 100%;
+
+      &:focus,
+      &:hover {
+        background: $primary-color;
+        color: #fff;
+      }
+    }
+  }
+}

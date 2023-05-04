@@ -1,0 +1,223 @@
+[
+    {
+        "key": "group_5e87013226224",
+        "title": "Datenschutz-Einstellungen",
+        "fields": [
+            {
+                "key": "field_5e87019f2a0d6",
+                "label": "Matomo",
+                "name": "ww_privacy_matomo",
+                "type": "group",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "block",
+                "sub_fields": [
+                    {
+                        "key": "field_5e8701e02a0d7",
+                        "label": "Aktivieren",
+                        "name": "act",
+                        "type": "true_false",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "message": "",
+                        "default_value": 0,
+                        "ui": 0,
+                        "ui_on_text": "",
+                        "ui_off_text": ""
+                    },
+                    {
+                        "key": "field_5e8702272a0d8",
+                        "label": "Code",
+                        "name": "code",
+                        "type": "textarea",
+                        "instructions": "",
+                        "required": 1,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_5e8701e02a0d7",
+                                    "operator": "==",
+                                    "value": "1"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "maxlength": "",
+                        "rows": "",
+                        "new_lines": ""
+                    }
+                ]
+            },
+            {
+                "key": "field_5e8704be90a51",
+                "label": "YouTube",
+                "name": "ww_privacy_youtube",
+                "type": "group",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "block",
+                "sub_fields": [
+                    {
+                        "key": "field_5e870147b8fa9",
+                        "label": "Aktivieren",
+                        "name": "act",
+                        "type": "true_false",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "message": "",
+                        "default_value": 0,
+                        "ui": 0,
+                        "ui_on_text": "",
+                        "ui_off_text": ""
+                    }
+                ]
+            },
+            {
+                "key": "field_5e8aea184e481",
+                "label": "Einstellungen",
+                "name": "ww_privacy_settings",
+                "type": "group",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "block",
+                "sub_fields": [
+                    {
+                        "key": "field_5e8aeaab4e482",
+                        "label": "Impressum",
+                        "name": "imprint_url",
+                        "type": "page_link",
+                        "instructions": "",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "post_type": [
+                            "page"
+                        ],
+                        "taxonomy": "",
+                        "allow_null": 0,
+                        "allow_archives": 0,
+                        "multiple": 0
+                    },
+                    {
+                        "key": "field_5e8ad9e8ea433",
+                        "label": "Datenschutzerklärung",
+                        "name": "privacy_url",
+                        "type": "page_link",
+                        "instructions": "",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "post_type": [
+                            "page"
+                        ],
+                        "taxonomy": "",
+                        "allow_null": 0,
+                        "allow_archives": 0,
+                        "multiple": 0
+                    },
+                    {
+                        "key": "field_5e8aeb0c4e483",
+                        "label": "Erklärung zur Barrierefreiheit",
+                        "name": "accessibility_url",
+                        "type": "page_link",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "post_type": [
+                            "page"
+                        ],
+                        "taxonomy": "",
+                        "allow_null": 0,
+                        "allow_archives": 0,
+                        "multiple": 0
+                    },
+                    {
+                        "key": "field_5e8ada6dea434",
+                        "label": "Text",
+                        "name": "text",
+                        "type": "textarea",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "maxlength": "",
+                        "rows": "",
+                        "new_lines": ""
+                    }
+                ]
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "options_page",
+                    "operator": "==",
+                    "value": "privacy-settings"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "seamless",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": ""
+    }
+]

@@ -1,0 +1,805 @@
+[
+    {
+        "key": "group_5dd4facb863d0",
+        "title": "Block: Kachel",
+        "location": [
+            [
+                {
+                    "param": "block",
+                    "operator": "==",
+                    "value": "acf\/tile"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "_valid": 1,
+        "local": "php",
+        "fields": {
+            "field_5dd4facb8c910": {
+                "key": "field_5dd4facb8c910",
+                "name": "img",
+                "type": "image",
+                "parent": "group_5dd4facb863d0",
+                "label": "Bild",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "id",
+                "preview_size": "medium",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": "",
+                "menu_order": 0
+            },
+            "field_5dd4facb8ccf2": {
+                "key": "field_5dd4facb8ccf2",
+                "name": "title",
+                "type": "text",
+                "parent": "group_5dd4facb863d0",
+                "label": "\u00dcberschrift",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": "",
+                "menu_order": 1
+            },
+            "field_5dd4facb8d0d7": {
+                "key": "field_5dd4facb8d0d7",
+                "name": "service-type",
+                "type": "wysiwyg",
+                "parent": "group_5dd4facb863d0",
+                "label": "Inhalt",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "tabs": "visual",
+                "toolbar": "basic",
+                "media_upload": 0,
+                "delay": 0,
+                "menu_order": 2
+            }
+        }
+    },
+    {
+        "key": "group_5df8a1e7581f0",
+        "title": "Block: Kachel mit Link",
+        "location": [
+            [
+                {
+                    "param": "block",
+                    "operator": "==",
+                    "value": "acf\/tile-link"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "_valid": 1,
+        "local": "php",
+        "fields": {
+            "field_5df8a508f6fc1": {
+                "key": "field_5df8a508f6fc1",
+                "name": "obj_id",
+                "type": "post_object",
+                "parent": "group_5df8a1e7581f0",
+                "label": "Link",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "post_type": "",
+                "taxonomy": "",
+                "allow_null": 0,
+                "multiple": 0,
+                "return_format": "id",
+                "ui": 1,
+                "menu_order": 0
+            },
+            "field_5df8a226f6fbd": {
+                "key": "field_5df8a226f6fbd",
+                "name": "img_type",
+                "type": "select",
+                "parent": "group_5df8a1e7581f0",
+                "label": "Bildtyp",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "file": "Datei",
+                    "post": "Beitragsbild"
+                },
+                "default_value": [],
+                "allow_null": 0,
+                "multiple": 0,
+                "ui": 0,
+                "return_format": "value",
+                "ajax": 0,
+                "placeholder": "",
+                "menu_order": 1
+            },
+            "field_5df8a391f6fbe": {
+                "key": "field_5df8a391f6fbe",
+                "name": "img",
+                "type": "image",
+                "parent": "group_5df8a1e7581f0",
+                "label": "Bild",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_5df8a226f6fbd",
+                            "operator": "==contains",
+                            "value": "file"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "id",
+                "preview_size": "medium",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": "",
+                "menu_order": 2
+            },
+            "field_5df8a412f6fbf": {
+                "key": "field_5df8a412f6fbf",
+                "name": "title",
+                "type": "text",
+                "parent": "group_5df8a1e7581f0",
+                "label": "\u00dcberschrift",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": "",
+                "menu_order": 3
+            },
+            "field_5df8a461f6fc0": {
+                "key": "field_5df8a461f6fc0",
+                "name": "content",
+                "type": "wysiwyg",
+                "parent": "group_5df8a1e7581f0",
+                "label": "Inhalt",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "tabs": "visual",
+                "toolbar": "basic",
+                "media_upload": 0,
+                "delay": 0,
+                "menu_order": 4
+            },
+            "field_5e675eafe1458": {
+                "key": "field_5e675eafe1458",
+                "name": "fancy_button",
+                "type": "true_false",
+                "parent": "group_5df8a1e7581f0",
+                "label": "Fancy Button",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "",
+                "default_value": 0,
+                "ui": 0,
+                "ui_on_text": "",
+                "ui_off_text": "",
+                "menu_order": 5
+            }
+        }
+    },
+    {
+        "key": "group_5e5794e680433",
+        "title": "Block: Mailformular",
+        "location": [
+            [
+                {
+                    "param": "block",
+                    "operator": "==",
+                    "value": "acf\/mailform"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "_valid": 1,
+        "local": "php",
+        "fields": {
+            "field_5e5795351a046": {
+                "key": "field_5e5795351a046",
+                "name": "events",
+                "type": "repeater",
+                "parent": "group_5e5794e680433",
+                "label": "Termine",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "collapsed": "",
+                "min": 0,
+                "max": 0,
+                "layout": "block",
+                "button_label": "",
+                "sub_fields": [],
+                "menu_order": 0
+            },
+            "field_5e57bedf7ba3b": {
+                "key": "field_5e57bedf7ba3b",
+                "name": "mailtext",
+                "type": "wysiwyg",
+                "parent": "group_5e5794e680433",
+                "label": "Mailtext",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "tabs": "all",
+                "toolbar": "full",
+                "media_upload": 0,
+                "delay": 0,
+                "menu_order": 1
+            },
+            "field_5e57bf3a7ba3c": {
+                "key": "field_5e57bf3a7ba3c",
+                "name": "recipients",
+                "type": "repeater",
+                "parent": "group_5e5794e680433",
+                "label": "Empf\u00e4ngeradressen",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "collapsed": "",
+                "min": 0,
+                "max": 0,
+                "layout": "block",
+                "button_label": "",
+                "sub_fields": [],
+                "menu_order": 2
+            }
+        }
+    },
+    {
+        "key": "group_5cdd64ac59d03",
+        "title": "Block: Slider",
+        "location": [
+            [
+                {
+                    "param": "block",
+                    "operator": "==",
+                    "value": "acf\/slider"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "_valid": 1,
+        "local": "php",
+        "fields": {
+            "field_5cf7a2c26a6f4": {
+                "key": "field_5cf7a2c26a6f4",
+                "name": "slider",
+                "type": "taxonomy",
+                "parent": "group_5cdd64ac59d03",
+                "label": "Slider",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "taxonomy": "slides_tag",
+                "field_type": "multi_select",
+                "allow_null": 0,
+                "add_term": 0,
+                "save_terms": 0,
+                "load_terms": 0,
+                "return_format": "id",
+                "multiple": 0,
+                "menu_order": 0
+            }
+        }
+    },
+    {
+        "key": "group_5dd3e9f06c1bc",
+        "title": "Block: Team",
+        "location": [
+            [
+                {
+                    "param": "block",
+                    "operator": "==",
+                    "value": "acf\/team"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "_valid": 1,
+        "local": "php",
+        "fields": {
+            "field_5dd3ea585848e": {
+                "key": "field_5dd3ea585848e",
+                "name": "img",
+                "type": "image",
+                "parent": "group_5dd3e9f06c1bc",
+                "label": "Bild",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "id",
+                "preview_size": "medium",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": "",
+                "menu_order": 0
+            },
+            "field_5dd3ea175848c": {
+                "key": "field_5dd3ea175848c",
+                "name": "name",
+                "type": "text",
+                "parent": "group_5dd3e9f06c1bc",
+                "label": "Name",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": "",
+                "menu_order": 1
+            },
+            "field_5dd3ea3b5848d": {
+                "key": "field_5dd3ea3b5848d",
+                "name": "position",
+                "type": "text",
+                "parent": "group_5dd3e9f06c1bc",
+                "label": "Position",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": "",
+                "menu_order": 2
+            }
+        }
+    },
+    {
+        "key": "group_5e4e8a1700835",
+        "title": "Block: YouTube",
+        "location": [
+            [
+                {
+                    "param": "block",
+                    "operator": "==",
+                    "value": "acf\/youtube"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "_valid": 1,
+        "local": "php",
+        "fields": {
+            "field_5e4e8a27ecd22": {
+                "key": "field_5e4e8a27ecd22",
+                "name": "oembed",
+                "type": "oembed",
+                "parent": "group_5e4e8a1700835",
+                "label": "YouTube Link",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "width": "",
+                "height": "",
+                "menu_order": 0
+            },
+            "field_5e4e8a9cecd23": {
+                "key": "field_5e4e8a9cecd23",
+                "name": "privacy",
+                "type": "textarea",
+                "parent": "group_5e4e8a1700835",
+                "label": "Datenschutztext",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": "",
+                "rows": "",
+                "new_lines": "br",
+                "menu_order": 1
+            },
+            "field_5e4e8e0943384": {
+                "key": "field_5e4e8e0943384",
+                "name": "privacylink",
+                "type": "page_link",
+                "parent": "group_5e4e8a1700835",
+                "label": "Datenschutzseite ausw\u00e4hlen",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "post_type": [
+                    "page"
+                ],
+                "taxonomy": "",
+                "allow_null": 0,
+                "allow_archives": 1,
+                "multiple": 0,
+                "menu_order": 2
+            },
+            "field_5e5692569ecd6": {
+                "key": "field_5e5692569ecd6",
+                "name": "overlay-img",
+                "type": "image",
+                "parent": "group_5e4e8a1700835",
+                "label": "Overlay-Bild",
+                "instructions": "W\u00e4hlen Sie ein Bild aus, das angezeigt wird, so lange YouTube nicht aktiviert ist.",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "id",
+                "preview_size": "ww-large",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": "",
+                "menu_order": 3
+            }
+        }
+    },
+    {
+        "key": "group_5e4554fd2c440",
+        "title": "Block: Z\u00e4hler",
+        "location": [
+            [
+                {
+                    "param": "block",
+                    "operator": "==",
+                    "value": "acf\/counter"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "_valid": 1,
+        "local": "php",
+        "fields": {
+            "field_5e45554f0c866": {
+                "key": "field_5e45554f0c866",
+                "name": "counter",
+                "type": "number",
+                "parent": "group_5e4554fd2c440",
+                "label": "Z\u00e4hlerwert",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "min": "",
+                "max": "",
+                "step": "",
+                "menu_order": 0
+            }
+        }
+    },
+    {
+        "key": "group_5d42fe1972e28",
+        "title": "Akkordeon",
+        "location": [
+            [
+                {
+                    "param": "block",
+                    "operator": "==",
+                    "value": "acf\/accordion"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "_valid": 1,
+        "local": "php",
+        "fields": {
+            "field_5d42fe2b7511c": {
+                "key": "field_5d42fe2b7511c",
+                "name": "accordion_wrapper",
+                "type": "repeater",
+                "parent": "group_5d42fe1972e28",
+                "label": "Akkordeon-Umschlag",
+                "instructions": "Akkordeon-Element hinzuf\u00fcgen",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "collapsed": "",
+                "min": 0,
+                "max": 0,
+                "layout": "block",
+                "button_label": "Akkordeonelement hinzuf\u00fcgen",
+                "sub_fields": [],
+                "menu_order": 0
+            }
+        }
+    },
+    {
+        "key": "group_5e183befc2573",
+        "title": "Men\u00fc",
+        "location": [
+            [
+                {
+                    "param": "nav_menu_item",
+                    "operator": "==",
+                    "value": "location\/main-nav"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "_valid": 1,
+        "local": "php",
+        "fields": {
+            "field_5e183c3eb2572": {
+                "key": "field_5e183c3eb2572",
+                "name": "menu-subhead",
+                "type": "text",
+                "parent": "group_5e183befc2573",
+                "label": "Unter\u00fcberschrift",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": "",
+                "menu_order": 0
+            }
+        }
+    },
+    {
+        "key": "group_5d6f7016dd782",
+        "title": "Seite",
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "page"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "side",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "_valid": 1,
+        "local": "php",
+        "fields": {
+            "field_5d6f704929917": {
+                "key": "field_5d6f704929917",
+                "name": "row_color",
+                "type": "select",
+                "parent": "group_5d6f7016dd782",
+                "label": "Farbe",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "none": "Keine",
+                    "blue": "Blau",
+                    "grey": "Grau"
+                },
+                "default_value": [],
+                "allow_null": 0,
+                "multiple": 0,
+                "ui": 0,
+                "return_format": "value",
+                "ajax": 0,
+                "placeholder": "",
+                "menu_order": 0
+            }
+        }
+    }
+]

@@ -1,0 +1,130 @@
+{
+    "key": "group_5e75fe4703777",
+    "title": "Block: E-Mail-Formular",
+    "fields": [
+        {
+            "key": "field_5e76005adfdbf",
+            "label": "Formular",
+            "name": "form",
+            "aria-label": "",
+            "type": "post_object",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "forms"
+            ],
+            "taxonomy": "",
+            "allow_null": 0,
+            "multiple": 0,
+            "return_format": "id",
+            "ui": 1
+        },
+        {
+            "key": "field_5e75ff37dfdbc",
+            "label": "Empfänger",
+            "name": "recipients",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 1,
+            "max": 0,
+            "layout": "block",
+            "button_label": "Empfänger hinzufügen",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_5e75ff8adfdbd",
+                    "label": "Empfänger",
+                    "name": "recipient",
+                    "aria-label": "",
+                    "type": "email",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_5e75ff37dfdbc"
+                }
+            ]
+        },
+        {
+            "key": "field_5e76000ddfdbe",
+            "label": "Mailtext",
+            "name": "mailtext",
+            "aria-label": "",
+            "type": "wysiwyg",
+            "instructions": "Felddaten können mit [Feldname] eingefügt werden. - z. B. [Vorname]",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 0,
+            "delay": 0
+        },
+        {
+            "key": "field_5e7774aeb6335",
+            "label": "Absender",
+            "name": "from_email",
+            "aria-label": "",
+            "type": "email",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/cmailform"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": false,
+    "modified": 1680819292
+}

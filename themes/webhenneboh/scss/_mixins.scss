@@ -1,0 +1,87 @@
+@mixin grid-dependend-space ($property, $divider: 2, $gutter: $grid-column-gutter) {
+	@if type-of($gutter) == 'map' {
+		@each $breakpoint, $value in $gutter {
+			@include breakpoint($breakpoint) {
+				#{$property}: rem-calc($value) / $divider;
+			}
+		}
+	} @else
+	if type-of($gutter) == 'number' and strip-unit($gutter) > 0 {
+		#{$property}: rem-calc($gutter) / $divider;
+	}
+}
+/*---------------------------------------------------
+# responsive Typografie
+-----------------------------------------------------*/
+@mixin fluidType($min-font, $max-font, $min-vw, $max-vw) {
+	font-size: calc(#{$min-font} + #{strip-unit($max-font - $min-font)} * ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)}));
+}
+/*---------------------------------------------------
+# Height Width gleiche Größe
+-----------------------------------------------------*/
+@mixin size($width, $height: $width) {
+	width: $width;
+	height: $height;
+}
+/*---------------------------------------------------
+# Icon für Mobile Navigation
+-----------------------------------------------------*/
+%has-sub-icon {
+  @include size(rem-calc(40));
+  background: url("../img/icons.svg#circle-right-gray") center/contain no-repeat;
+  content: '';
+  display: inline-block;
+
+	@include breakpoint(xlarge) {
+		background-image: url("../img/icons.svg#arrow-down-menu");
+		height: rem-calc(7.5);
+		width: rem-calc(15);
+	}
+}
+/*---------------------------------------------------
+# Animation Icon für Mobile Navigation
+-----------------------------------------------------*/
+%btn-rotate {
+  transition: transform 0.15s ease-in-out;
+
+  &:focus,
+  &:hover {
+    transform: rotate(-45deg);
+  }
+}
+/*---------------------------------------------------
+# Animation sticky
+-----------------------------------------------------*/
+@keyframes sticky {
+	0% {
+		max-height: 0;
+	}
+
+	100% {
+		max-height: 50rem;
+	}
+}
+/*---------------------------------------------------
+# Icon für Kacheln
+-----------------------------------------------------*/
+%tile-icon {
+  @include size(rem-calc(40));
+  background: url("../img/icons.svg#circle-right-gray") center/contain no-repeat;
+  content: '';
+  display: inline-block;
+}
+
+/*---------------------------------------------------
+# Cat Border Blog
+-----------------------------------------------------*/
+@mixin border($cat-border, $border-width, $color) {
+  .#{$cat-border} {
+    border-top-style: solid;
+    border-top-width: $border-width / 2;
+    border-top-color: $color;
+
+    @include breakpoint (large) {
+      border-top-width: $border-width;
+    }
+  }
+}

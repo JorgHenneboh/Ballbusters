@@ -1,0 +1,150 @@
+{
+    "key": "group_6380d0a032c33",
+    "title": "Block: Bundesliga 2Spielplan",
+    "fields": [
+        {
+            "key": "field_6380d0a06bcf5",
+            "label": "Zeile",
+            "name": "row",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "Eintrag hinzufügen",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_6380d0a0cadbc",
+                    "label": "Spielnummer",
+                    "name": "spielnummer",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "parent_repeater": "field_6380d0a06bcf5"
+                },
+                {
+                    "key": "field_6380d0a0ce99b",
+                    "label": "Zeit",
+                    "name": "zeit",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "parent_repeater": "field_6380d0a06bcf5"
+                },
+                {
+                    "key": "field_6380d0a0d2442",
+                    "label": "Mannschaft 1",
+                    "name": "mannschaft_1",
+                    "aria-label": "",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "Hurricanes Bochum": "Hurricanes Bochum",
+                        "Flash Tigers": "Flash Tigers",
+                        "Ruhr Rollers Essen": "Ruhr Rollers Essen",
+                        "Ballbusters Würzburg": "Ballbusters Würzburg",
+                        "Rocky Rolling Wheels Berlin": "Rocky Rolling Wheels Berlin"
+                    },
+                    "default_value": false,
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "return_format": "value",
+                    "ajax": 0,
+                    "placeholder": "",
+                    "parent_repeater": "field_6380d0a06bcf5"
+                },
+                {
+                    "key": "field_6380d0a0d5f00",
+                    "label": "Mannschaft 2",
+                    "name": "mannschaft_2",
+                    "aria-label": "",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "Hurricanes Bochum": "Hurricanes Bochum",
+                        "Flash Tigers": "Flash Tigers",
+                        "Ruhr Rollers Essen": "Ruhr Rollers Essen",
+                        "Ballbusters Würzburg": "Ballbusters Würzburg",
+                        "Rocky Rolling Wheels Berlin": "Rocky Rolling Wheels Berlin"
+                    },
+                    "default_value": false,
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "return_format": "value",
+                    "ajax": 0,
+                    "placeholder": "",
+                    "parent_repeater": "field_6380d0a06bcf5"
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/spielplan2liga"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1680819292
+}

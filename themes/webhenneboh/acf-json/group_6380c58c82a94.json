@@ -1,0 +1,254 @@
+{
+    "key": "group_6380c58c82a94",
+    "title": "Block: Bundesliga Spielplan2",
+    "fields": [
+        {
+            "key": "field_6380c58cccd21",
+            "label": "Zeile",
+            "name": "row",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "Eintrag hinzufügen",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_6380c58d40959",
+                    "label": "Spielnummer",
+                    "name": "spielnummer",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "parent_repeater": "field_6380c58cccd21"
+                },
+                {
+                    "key": "field_6380c58d4440b",
+                    "label": "Zeit",
+                    "name": "zeit",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "parent_repeater": "field_6380c58cccd21"
+                },
+                {
+                    "key": "field_6380c58d47ea2",
+                    "label": "Mannschaft 1",
+                    "name": "mannschaft_1",
+                    "aria-label": "",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "Hurricanes Bochum": "Hurricanes Bochum",
+                        "Flash Tigers": "Flash Tigers",
+                        "Ruhr Rollers Essen": "Ruhr Rollers Essen",
+                        "Ballbusters Würzburg": "Ballbusters Würzburg",
+                        "Rocky Rolling Wheels Berlin": "Rocky Rolling Wheels Berlin"
+                    },
+                    "default_value": false,
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "return_format": "value",
+                    "ajax": 0,
+                    "placeholder": "",
+                    "parent_repeater": "field_6380c58cccd21"
+                },
+                {
+                    "key": "field_6380c58d4b944",
+                    "label": "Mannschaft 2",
+                    "name": "mannschaft_2",
+                    "aria-label": "",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "Hurricanes Bochum": "Hurricanes Bochum",
+                        "Flash Tigers": "Flash Tigers",
+                        "Ruhr Rollers Essen": "Ruhr Rollers Essen",
+                        "Ballbusters Würzburg": "Ballbusters Würzburg",
+                        "Rocky Rolling Wheels Berlin": "Rocky Rolling Wheels Berlin"
+                    },
+                    "default_value": false,
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "return_format": "value",
+                    "ajax": 0,
+                    "placeholder": "",
+                    "parent_repeater": "field_6380c58cccd21"
+                },
+                {
+                    "key": "field_6380c58d4f2a3",
+                    "label": "Ergebnis",
+                    "name": "ergebnis",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "parent_repeater": "field_6380c58cccd21"
+                },
+                {
+                    "key": "field_6380c58d52dfa",
+                    "label": "(HZ)",
+                    "name": "hz",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "parent_repeater": "field_6380c58cccd21"
+                },
+                {
+                    "key": "field_6380c58d5689d",
+                    "label": "1. Schiedsrichter",
+                    "name": "1_schiedsrichter",
+                    "aria-label": "",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "Gennadi Hill": "Gennadi Hill",
+                        "Richard Loch-Karl": "Richard Loch-Karl",
+                        "Paul Kirste": "Paul Kirste",
+                        "Leonie Mülheims": "Leonie Mülheims",
+                        "Mirco Albers": "Mirco Albers",
+                        "Reinhold Goltz": "Reinhold Goltz"
+                    },
+                    "default_value": false,
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "return_format": "value",
+                    "ajax": 0,
+                    "placeholder": "",
+                    "parent_repeater": "field_6380c58cccd21"
+                },
+                {
+                    "key": "field_6380c58d5a341",
+                    "label": "2. Schiedsrichter",
+                    "name": "2_schiedsrichter",
+                    "aria-label": "",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "Gennadi Hill": "Gennadi Hill",
+                        "Richard Loch-Karl": "Richard Loch-Karl",
+                        "Paul Kirste": "Paul Kirste",
+                        "Leonie Mülheims": "Leonie Mülheims",
+                        "Mirco Albers": "Mirco Albers",
+                        "Reinhold Goltz": "Reinhold Goltz"
+                    },
+                    "default_value": false,
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "return_format": "value",
+                    "ajax": 0,
+                    "placeholder": "",
+                    "parent_repeater": "field_6380c58cccd21"
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/spielplan-2liga"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1680819292
+}

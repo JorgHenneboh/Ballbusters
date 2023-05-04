@@ -1,0 +1,258 @@
+{
+    "key": "group_6380a05a66bab",
+    "title": "Block: Bundesliga Spielplan1",
+    "fields": [
+        {
+            "key": "field_6380a05b3653a",
+            "label": "Zeile",
+            "name": "row",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "Eintrag hinzufügen",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_6380a05b8a445",
+                    "label": "Spielnummer",
+                    "name": "spielnummer",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "parent_repeater": "field_6380a05b3653a"
+                },
+                {
+                    "key": "field_6380a7501a964",
+                    "label": "Zeit",
+                    "name": "zeit",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "parent_repeater": "field_6380a05b3653a"
+                },
+                {
+                    "key": "field_6380a05b8def4",
+                    "label": "Mannschaft 1",
+                    "name": "mannschaft_1",
+                    "aria-label": "",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "Black Knights Dreieich 1": "Black Knights Dreieich 1",
+                        "Black Knights Dreieich 2": "Black Knights Dreieich 2",
+                        "Star Drivers Bad Kreuznach": "Star Drivers Bad Kreuznach",
+                        "Rolli Teufel Ludwigshafen": "Rolli Teufel Ludwigshafen",
+                        "Munich Animals": "Munich Animals",
+                        "Nording Bulls Lalendorf": "Nording Bulls Lalendorf"
+                    },
+                    "default_value": false,
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "return_format": "value",
+                    "ajax": 0,
+                    "placeholder": "",
+                    "parent_repeater": "field_6380a05b3653a"
+                },
+                {
+                    "key": "field_6380a3fd95975",
+                    "label": "Mannschaft 2",
+                    "name": "mannschaft_2",
+                    "aria-label": "",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "Black Knights Dreieich 1": "Black Knights Dreieich 1",
+                        "Black Knights Dreieich 2": "Black Knights Dreieich 2",
+                        "Star Drivers Bad Kreuznach": "Star Drivers Bad Kreuznach",
+                        "Rolli Teufel Ludwigshafen": "Rolli Teufel Ludwigshafen",
+                        "Munich Animals": "Munich Animals",
+                        "Nording Bulls Lalendorf": "Nording Bulls Lalendorf"
+                    },
+                    "default_value": false,
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "return_format": "value",
+                    "ajax": 0,
+                    "placeholder": "",
+                    "parent_repeater": "field_6380a05b3653a"
+                },
+                {
+                    "key": "field_6380a4716a46b",
+                    "label": "Ergebnis",
+                    "name": "ergebnis",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "parent_repeater": "field_6380a05b3653a"
+                },
+                {
+                    "key": "field_6380a4c0e8bad",
+                    "label": "(HZ)",
+                    "name": "hz",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "parent_repeater": "field_6380a05b3653a"
+                },
+                {
+                    "key": "field_6380a4d1e8bae",
+                    "label": "1. Schiedsrichter",
+                    "name": "1_schiedsrichter",
+                    "aria-label": "",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "Gennadi Hill": "Gennadi Hill",
+                        "Gerd Menz": "Gerd Menz",
+                        "Paul Kirste": "Paul Kirste",
+                        "Nadir Mohamed": "Nadir Mohamed",
+                        "Christoph Respondek": "Christoph Respondek",
+                        "Jürgen Erdmann-Feix": "Jürgen Erdmann-Feix",
+                        "Ralf Buree": "Ralf Buree"
+                    },
+                    "default_value": false,
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "return_format": "value",
+                    "ajax": 0,
+                    "placeholder": "",
+                    "parent_repeater": "field_6380a05b3653a"
+                },
+                {
+                    "key": "field_6380a4ede8baf",
+                    "label": "2. Schiedsrichter",
+                    "name": "2_schiedsrichter",
+                    "aria-label": "",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "Gennadi Hill": "Gennadi Hill",
+                        "Gerd Menz": "Gerd Menz",
+                        "Paul Kirste": "Paul Kirste",
+                        "Nadir Mohamed": "Nadir Mohamed",
+                        "Christoph Respondek": "Christoph Respondek",
+                        "Jürgen Erdmann-Feix": "Jürgen Erdmann-Feix",
+                        "Ralf Buree": "Ralf Buree"
+                    },
+                    "default_value": false,
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "return_format": "value",
+                    "ajax": 0,
+                    "placeholder": "",
+                    "parent_repeater": "field_6380a05b3653a"
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/spielplan-1liga"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1680819292
+}

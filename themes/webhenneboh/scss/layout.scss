@@ -1,0 +1,118 @@
+@charset 'utf-8';
+@import 'settings';
+@import 'mixins';
+@import 'fonts';
+@import 'foundation';
+@include foundation-global-styles;
+@include foundation-typography;
+@include foundation-visibility-classes; // Custom Elements
+
+body{
+  position: relative;
+}
+/*header*/
+header {
+  nav#page {
+    background: $primary-color;
+    width: $global-width;
+    margin: 0 auto;
+    text-align: left;
+
+    ul {
+      width: $global-width;
+      display: flex;
+      justify-content: flex-start;
+    }
+  }
+  nav#ball-of-fame_page,
+  nav#ballbusterspage {
+    background: $primary-color;
+    width: $global-width;
+    margin: 0 auto;
+    text-align: left;
+
+    ul {
+      width: 1026px;
+      display: flex;
+      justify-content: flex-start;
+    }
+  }
+
+  nav#bundesligapage {
+    background: $primary-color;
+    width: $global-width;
+    margin: 0 auto;
+    text-align: left;
+
+    ul {
+      width: 684px;
+      display: flex;
+      justify-content: flex-start;
+    }
+  }
+
+  nav#nav_wrap {
+    background: $primary-color;
+    .active {
+      background-color: $secondary-color;
+      color: #fff;
+    }
+    li {
+      flex: 12.5%;
+      list-style-type: none;
+
+
+
+      a {
+        color: #fff;
+        display: block;
+        font-size: 18px;
+        padding: 0.975rem 0;
+        text-align: center;
+
+        &:focus,
+        &:hover {
+          background-color: $secondary-color;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+main{
+min-height: 960px;
+
+}
+main,
+footer{
+width: $global-width;
+  margin: 0 auto;
+}
+#btn-top {
+  position: fixed;
+  right: 1rem;
+  bottom: 4rem;
+
+  a {
+    color: $primary-color;
+
+    &:focus,
+    &:hover {
+      .symbol {
+        color: #fff;
+        fill: $primary-color;
+        border-radius: 100%;
+        border: solid 3px $primary-color;
+        background: $primary-color;
+      }
+    }
+  }
+
+  .symbol {
+    width: 50px;
+    height: 50px;
+    fill: #eee;
+    border-radius: 100%;
+    border: solid 3px $primary-color;
+  }
+}
