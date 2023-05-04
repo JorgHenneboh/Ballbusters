@@ -8,6 +8,7 @@
 @include foundation-visibility-classes; // Custom Elements
 h1{
   color: $primary-color;
+  margin: 1rem 0;
 }
 body{
   position: relative;
