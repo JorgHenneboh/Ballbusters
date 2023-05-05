@@ -8,7 +8,7 @@
 			<th title="Platz"class="platz"><p>Platz</p></th>
 			<th title="Mannschaft"class="team"><p>Mannschaft</p></th>
 			<th title="Spiele" id="bundesliga" ><p>Spiele</p></th>
-			<th title="Gewonnen"  class="guv"><p>G</p></th>
+			<th title="Gewonnen" id="bundesliga" class="guv"><p>G</p></th>
 			<th title="Unentschieden" id="bundesliga"  class="guv"><p>U</p></th>
 			<th title="Verloren"id="bundesliga" class="guv"><p>V</p></th>
 			<th title="Tore" id="bundesliga"  class="tore"><p>Tore</p></th>

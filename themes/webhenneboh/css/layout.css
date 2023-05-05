@@ -1004,7 +1004,7 @@ footer {
     border-color: #1f5da6; }
   #bundesligatable tbody .punkte {
     min-width: 21%;
-    padding: .5rem; }
+    padding: .5rem 1rem; }
   #bundesligatable tbody .platz {
     padding-left: .5rem;
     min-width: 17%; }
