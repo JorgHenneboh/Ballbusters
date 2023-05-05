@@ -1,18 +1,18 @@
-  <figure class="wp-block-table">
+  <figure id=bundesligatable>
 	<table>
 
   <thead>
 
 
-		<tr class="pchinfo">
+		<tr>
 			<th title="Platz"class="platz"><p>Platz</p></th>
 			<th title="Mannschaft"class="team"><p>Mannschaft</p></th>
-			<th title="Spiele"><p>Spiele</p></th>
+			<th title="Spiele" id="bundesliga" ><p>Spiele</p></th>
 			<th title="Gewonnen"  class="guv"><p>G</p></th>
-			<th title="Unentschieden" class="guv"><p>U</p></th>
-			<th title="Verloren" class="guv"><p>V</p></th>
-			<th title="Tore" class="tore"><p>Tore</p></th>
-		<th title="Tordifferenz"><p>Diff.</p></th>
+			<th title="Unentschieden" id="bundesliga"  class="guv"><p>U</p></th>
+			<th title="Verloren"id="bundesliga" class="guv"><p>V</p></th>
+			<th title="Tore" id="bundesliga"  class="tore"><p>Tore</p></th>
+		<th title="Tordifferenz" id="bundesliga" ><p>Diff.</p></th>
 	  <th title="Punkte" class="punkte"><p>Punkte</p></th>
 		</tr>
 	  </thead>
@@ -29,7 +29,7 @@
 			?>
 		  <tr class="zeile">
 
-		  <td>
+		  <td class="platz">
 			  <p class="res-tbody"><?php the_sub_field( 'platz' ); ?></p>
 		  </td>
 		  <td class="team">
@@ -42,22 +42,22 @@
     $verloren = trim(get_sub_field( 'verloren' ));
   $spiele = (int)$gewonnen + (int)$unentschieden + (int)$verloren;
    ?>
-		  <td>
+		  <td id="bundesliga">
 
 			  <p class="res-tbody"><?php echo $spiele; ?></p>
 		  </td>
 
 
 
-		  <td class="guv">
+		  <td id="bundesliga"  class="guv">
 
 			  <p class="res-tbody"><?php the_sub_field( 'gewonnen' ); ?></p>
 		  </td>
-		  <td lass="guv">
+		  <td id="bundesliga"  class="guv">
 
 			  <p class="res-tbody"><?php the_sub_field( 'unentschieden' ); ?></p>
 		  </td>
-		  <td lass="guv">
+		  <td id="bundesliga" class="guv">
 
 			  <p class="res-tbody"><?php the_sub_field( 'verloren' ); ?></p>
 		  </td>
@@ -68,14 +68,14 @@
 
     $ergebnis = (int)$tore - (int)$gegentore;
     ?>
-              <td class="tore">
+              <td id="bundesliga"  class="tore">
 
                   <p class="res-tbody"><?php echo $tore; ?>:<?php echo $gegentore; ?></p>
               </td>
 
 
 
-              <td>
+              <td id="bundesliga" >
 
                   <p class="res-tbody"><?php echo $ergebnis; ?></p>
 
@@ -85,10 +85,11 @@ $sieg = 2;
 $sieg = $gewonnen * $sieg;
 $punkte = (int)$sieg + (int)$unentschieden;
        ?>
-		  <td>
+		  <td class="punkte">
 
 			  <p class="res-tbody"><?php echo abs($punkte); ?></p>
 			  </tr>
+      </td>
 		<?php endwhile; ?>
 
   <?php endif; ?>

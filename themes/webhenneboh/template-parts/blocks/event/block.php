@@ -1,9 +1,12 @@
+<div id="sidebar-item">
 
 
+<div class="headline">
+	<h3><?php the_field( 'headline' ); ?></h3>
+</div>
 
-		<h3><?php the_field( 'headline' ); ?></h3>
 
-<div class="content-event">
+  <div id="event-start">
 <?php
 	// $vars = filter_input_array(
 	// INPUT_POST,
@@ -108,24 +111,24 @@ if ( ! function_exists( 'ww_get_full_address' ) ) {
 														}
 						// var_dump($cats);
 
-						echo '<div class="event-item-start"><a class"btn" href="' . esc_url( get_permalink() ) . '">' . $img . '<div class="post-info"><div class="box-content">';
+						echo '<div class="event-item"><a href="' . esc_url( get_permalink() ) . '">' . $img ;
 							// $catname = $slug[0] = $cat->name;
 							// echo $catname;
-						the_title( '<h3>','</h3>' );
+
 
 						if ( tribe_get_start_date( $post, false ) === tribe_get_end_date( $post, false ) ) {
-								echo '<p>' . esc_html( tribe_get_start_date( $post, true, 'j. F Y G:i' ) . ' - ' . tribe_get_end_date( $post, true, ' G:i' ) ) . ' Uhr</p>';
+								echo '<span>' . esc_html( tribe_get_start_date( $post, true, 'j. F Y G:i' ) . ' - ' . tribe_get_end_date( $post, true, ' G:i' ) ) . ' Uhr</span>';
 						} else {
-							echo '<p>Beginn:' . esc_html( tribe_get_start_date( $post, true, ' j. F Y' ) ) . ' <br>Ende:' . esc_html( tribe_get_end_date( $post, true, ' j. F Y ' ) ) . '</p>';
+							echo '<span>Beginn:' . esc_html( tribe_get_start_date( $post, true, ' j. F Y' ) ) . ' <br>Ende:' . esc_html( tribe_get_end_date( $post, true, ' j. F Y ' ) ) . '</span>';
 						}
-
+						the_title( '<h3>','</h3>' );
 						if ( tribe_get_the_content() ) {
-									echo '<div class="e-teaser"><h3 class="e-subhead">' . esc_html__( 'Beschreibung:', 'webwerk' ) . '</h3><p>' . excerpt( 21 ) . '</p></div>';
+									echo '<span>' . esc_html__( 'Beschreibung:') . '<span><p>' . excerpt( 21 ) . '</p>';
 						}
 						if ( tribe_get_venue() ) {
-										echo '<div class="e-venue"><h3 class="e-subhead">' . esc_html__( 'Ort:', 'webwerk' ) . '</h3><p>'.  esc_html(	tribe_get_address())	 . '<br>' . esc_html( tribe_get_zip() ) .' ' .esc_html( tribe_get_city()) . '</p></div>';
+										echo '<span class="ort">' . esc_html__( 'Ort:') . ' '.  esc_html(	tribe_get_address())	 . ' ' . esc_html( tribe_get_zip() ) .' ' .esc_html( tribe_get_city()) . '</span>';
 						}
-						echo '</div></div></a></div>';
+						echo '</a></div>';
 
 
 
@@ -142,3 +145,4 @@ if ( ! function_exists( 'ww_get_full_address' ) ) {
 <?php
 echo '<a class="event-link" href="' . esc_url( home_url( '/veranstaltungen/' ) ) . '">weitere Veranstaltungen</a>';
 ?>
+</div>

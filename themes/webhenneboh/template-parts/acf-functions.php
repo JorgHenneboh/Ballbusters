@@ -15,6 +15,14 @@ acf_register_block_type(
 );
 acf_register_block_type(
 	array(
+		'name'            => 'betterplace',
+		'title'           => __( 'betterplace.org' ),
+		'description'     => __( 'A custom testimonial block.' ),
+		'render_template' => get_template_directory() . '/template-parts/blocks/betterplace/block.php',
+	)
+);
+acf_register_block_type(
+	array(
 		'name'            => 'testimonial',
 		'title'           => __( 'Testimonial' ),
 		'description'     => __( 'A custom testimonial block.' ),

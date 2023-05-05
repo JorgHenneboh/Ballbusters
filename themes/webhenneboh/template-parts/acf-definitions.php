@@ -287,7 +287,7 @@ if ( function_exists( 'acf_add_local_field_group' ) ) :
 						'maxlength' => '',
 					),
 
-			
+
 				),
 			),
 		),
@@ -1727,10 +1727,31 @@ if ( function_exists( 'acf_add_local_field_group' ) ) :
 			'key'                   => 'group_5ea952fcad296',
 			'title'                 => 'Block: Kachel Logo',
 			'fields'                => array(
+
 				array(
 					'key'               => 'field_5ea95504952ec',
 					'label'             => 'Überschrift',
 					'name'              => 'title',
+					'aria-label'        => '',
+					'type'              => 'text',
+					'instructions'      => '',
+					'required'          => 0,
+					'conditional_logic' => 0,
+					'wrapper'           => array(
+						'width' => '',
+						'class' => '',
+						'id'    => '',
+					),
+					'default_value'     => '',
+					'placeholder'       => '',
+					'prepend'           => '',
+					'append'            => '',
+					'maxlength'         => '',
+				),
+				array(
+					'key'               => 'field_5ea95504952ec1',
+					'label'             => 'Text',
+					'name'              => 'text',
 					'aria-label'        => '',
 					'type'              => 'text',
 					'instructions'      => '',
@@ -2099,99 +2120,7 @@ if ( function_exists( 'acf_add_local_field_group' ) ) :
 		)
 	);
 
-	acf_add_local_field_group(
-		array(
-			'key'                   => 'group_5eba7be207b8e',
-			'title'                 => 'Block: Veranstaltungen',
-			'fields'                => array(
-				array(
-					'key'               => 'field_5eba7c347890b',
-					'label'             => 'Anzahl anzuzeigender Veranstaltungen',
-					'name'              => 'num',
-					'aria-label'        => '',
-					'type'              => 'range',
-					'instructions'      => '',
-					'required'          => 0,
-					'conditional_logic' => 0,
-					'wrapper'           => array(
-						'width' => '',
-						'class' => '',
-						'id'    => '',
-					),
-					'default_value'     => 2,
-					'min'               => 1,
-					'max'               => 5,
-					'step'              => '',
-					'prepend'           => '',
-					'append'            => '',
-				),
-				array(
-					'key'               => 'field_5eba7cb77890c',
-					'label'             => 'Kategorie',
-					'name'              => 'cat',
-					'aria-label'        => '',
-					'type'              => 'taxonomy',
-					'instructions'      => '',
-					'required'          => 0,
-					'conditional_logic' => 0,
-					'wrapper'           => array(
-						'width' => '',
-						'class' => '',
-						'id'    => '',
-					),
-					'taxonomy'          => 'tribe_events_cat',
-					'field_type'        => 'select',
-					'allow_null'        => 0,
-					'add_term'          => 0,
-					'save_terms'        => 0,
-					'load_terms'        => 0,
-					'return_format'     => 'object',
-					'multiple'          => 0,
-				),
-				array(
-					'key'               => 'field_5eba7ddc7890d',
-					'label'             => 'Schlagwort',
-					'name'              => 'tag',
-					'aria-label'        => '',
-					'type'              => 'taxonomy',
-					'instructions'      => '',
-					'required'          => 0,
-					'conditional_logic' => 0,
-					'wrapper'           => array(
-						'width' => '',
-						'class' => '',
-						'id'    => '',
-					),
-					'taxonomy'          => 'post_tag',
-					'field_type'        => 'select',
-					'allow_null'        => 0,
-					'add_term'          => 0,
-					'save_terms'        => 0,
-					'load_terms'        => 0,
-					'return_format'     => 'id',
-					'multiple'          => 0,
-				),
-			),
-			'location'              => array(
-				array(
-					array(
-						'param'    => 'block',
-						'operator' => '==',
-						'value'    => 'acf/events',
-					),
-				),
-			),
-			'menu_order'            => 0,
-			'position'              => 'normal',
-			'style'                 => 'default',
-			'label_placement'       => 'top',
-			'instruction_placement' => 'label',
-			'hide_on_screen'        => '',
-			'active'                => true,
-			'description'           => '',
-			'show_in_rest'          => false,
-		)
-	);
+
 
 	acf_add_local_field_group(
 		array(
@@ -3196,5 +3125,71 @@ if ( function_exists( 'acf_add_local_field_group' ) ) :
 	'description' => '',
 	'show_in_rest' => 0,
 ));
+
+acf_add_local_field_group(array(
+	'key' => 'group_6454d28c5c004',
+	'title' => 'betterplace.org',
+	'fields' => array(
+		array(
+			'key' => 'field_6454d28c25417',
+			'label' => 'Überschrift',
+			'name' => 'headline',
+			'aria-label' => '',
+			'type' => 'text',
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => array(
+				'width' => '',
+				'class' => '',
+				'id' => '',
+			),
+			'default_value' => '',
+			'maxlength' => '',
+			'placeholder' => '',
+			'prepend' => '',
+			'append' => '',
+		),
+		array(
+			'key' => 'field_6454d2c525418',
+			'label' => 'Projekt ID',
+			'name' => 'projekt_id',
+			'aria-label' => '',
+			'type' => 'text',
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => array(
+				'width' => '',
+				'class' => '',
+				'id' => '',
+			),
+			'default_value' => '',
+			'maxlength' => '',
+			'placeholder' => '',
+			'prepend' => '',
+			'append' => '',
+		),
+	),
+	'location' => array(
+		array(
+			array(
+				'param' => 'block',
+				'operator' => '==',
+				'value' => 'acf/betterplace',
+			),
+		),
+	),
+	'menu_order' => 0,
+	'position' => 'normal',
+	'style' => 'default',
+	'label_placement' => 'top',
+	'instruction_placement' => 'label',
+	'hide_on_screen' => '',
+	'active' => true,
+	'description' => '',
+	'show_in_rest' => 0,
+));
+
 
 endif;

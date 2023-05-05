@@ -946,4 +946,150 @@ footer {
     border-radius: 100%;
     border: solid 3px #b20202; }
 
+/*sidebar*/
+.sidebar-item,
+#sidebar-item {
+  margin-bottom: 2rem; }
+  .sidebar-item .headline,
+  #sidebar-item .headline {
+    border-bottom: 1px solid #b20202;
+    padding: 0 .5rem; }
+
+/*Event*/
+.event-item a {
+  border-bottom: 1px solid #b20202;
+  padding: 1rem .5rem;
+  display: block; }
+
+.event-link {
+  padding: .5rem .5rem;
+  display: block; }
+
+/*Logo*/
+/*betterplace.org*/
+#betterplace-item,
+#item-logo {
+  padding: 1rem .5rem;
+  display: block; }
+
+/*---------------------------------------------------
+# Tabelle
+---------------------------------------------------*/
+#bundesliga {
+  display: none; }
+
+.time p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+#bundesligatable table {
+  display: block;
+  border-spacing: 0; }
+
+#bundesligatable tbody {
+  display: block;
+  min-width: 100%; }
+  #bundesligatable tbody tr {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
+  #bundesligatable tbody td {
+    border-color: #1f5da6; }
+  #bundesligatable tbody .punkte {
+    min-width: 21%;
+    padding: .5rem; }
+  #bundesligatable tbody .platz {
+    padding-left: .5rem;
+    min-width: 17%; }
+  #bundesligatable tbody .team {
+    min-width: 62%; }
+
+#bundesligatable thead {
+  display: block;
+  background: #1f5da6;
+  min-width: 100%; }
+  #bundesligatable thead tr {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
+  #bundesligatable thead th {
+    border-color: #1f5da6; }
+  #bundesligatable thead .punkte {
+    min-width: 21%;
+    padding: .5rem; }
+  #bundesligatable thead .platz {
+    padding-left: .5rem;
+    min-width: 17%; }
+  #bundesligatable thead .team {
+    min-width: 62%; }
+
+#bundesligatable td,
+#bundesligatable th {
+  padding: 0.625rem 0;
+  text-align: left; }
+
+#bundesligatable th {
+  font-weight: normal;
+  color: #fff; }
+
+#bundesligatable tbody tr:nth-child(even) {
+  background: #EEEEEE; }
+
+#bundesligatable p {
+  margin: 0; }
+
+#bundesligatable .res-thead {
+  display: none; }
+
+@media screen and (max-width: 1023px) and (min-width: 720px) {
+  .spielpaarung p {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; } }
+
+@media screen and (min-width: 63.9375em) {
+  .spielpaarung p .team1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
+    .spielpaarung p .team1 span {
+      margin: 0;
+      padding-right: 0.5rem; }
+  .spielpaarung p .team2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
+    .spielpaarung p .team2 span {
+      padding-left: 0.5rem;
+      margin: 0; }
+  .spielpaarung p {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .spielpaarung p .team1,
+    .spielpaarung p .team2 {
+      width: 400px; } }
+
 /*# sourceMappingURL=layout.css.map */

@@ -1,17 +1,28 @@
+
+<div id="sidebar-item">
 <?php
 
 
 
 
 $head = get_field( 'title' );
+$text = get_field( 'text' );
 ?>
-<div class="box-tiles-logo">
+
 
 
 
 
 <?php if ( $head ) : ?>
+<div class="headline">
 <h3><?php echo $head; ?></h3>
+</div>
+<?php endif; ?>
+<div id="item-logo">
+
+
+<?php if ( $text ) : ?>
+<span><?php echo $text; ?></span>
 <?php endif; ?>
 		<?php if ( have_rows( 'logos' ) ) : ?>
 			<?php
@@ -66,4 +77,5 @@ $head = get_field( 'title' );
 <?php endwhile; ?>
 
 		<?php endif; ?>
+	</div>
 </div>
